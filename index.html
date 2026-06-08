@@ -205,35 +205,66 @@
 <div class="container">
   <span class="section-label">Reviews</span>
   <h2 class="section-heading">What Our Customers Say</h2>
-  <div class="testimonials__grid">
+  <div class="testimonials__marquee" aria-label="Customer reviews">
+    <div class="testimonials__track" aria-hidden="false">
 
-    <div class="testimonial-card">
-      <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
-      <p class="testimonial-card__text">You explain an idea, he looks at the room for five minutes and comes back with a solution ten times better than what you imagined. Absolute genius at what he does. Reliable, skilled and genuinely talented.</p>
-      <div class="testimonial-card__author">
-        <span class="testimonial-card__name">The Colour Room Gloucester</span>
-        <span class="testimonial-card__location">Gloucester</span>
+      <!-- Original set -->
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial-card__text">You explain an idea, he looks at the room for five minutes and comes back with a solution ten times better than what you imagined. Absolute genius at what he does. Reliable, skilled and genuinely talented.</p>
+        <div class="testimonial-card__author">
+          <span class="testimonial-card__name">The Colour Room Gloucester</span>
+          <span class="testimonial-card__location">Gloucester</span>
+        </div>
       </div>
-    </div>
 
-    <div class="testimonial-card">
-      <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
-      <p class="testimonial-card__text">He has transformed what was a cold damp and grotty bathroom I was ashamed of into being my favourite room in my house. Thank you Matt, you're a star.</p>
-      <div class="testimonial-card__author">
-        <span class="testimonial-card__name">Meg Seg</span>
-        <span class="testimonial-card__location">Gloucester</span>
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial-card__text">He has transformed what was a cold damp and grotty bathroom I was ashamed of into being my favourite room in my house. Thank you Matt, you're a star.</p>
+        <div class="testimonial-card__author">
+          <span class="testimonial-card__name">Meg Seg</span>
+          <span class="testimonial-card__location">Gloucester</span>
+        </div>
       </div>
-    </div>
 
-    <div class="testimonial-card">
-      <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
-      <p class="testimonial-card__text">Matt came out promptly to quote and fix our window display when another contractor let us down. We would definitely contact him again for any other jobs.</p>
-      <div class="testimonial-card__author">
-        <span class="testimonial-card__name">Murdock &amp; Wasley Estate Agents</span>
-        <span class="testimonial-card__location">Gloucester</span>
+      <div class="testimonial-card">
+        <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial-card__text">Matt came out promptly to quote and fix our window display when another contractor let us down. We would definitely contact him again for any other jobs.</p>
+        <div class="testimonial-card__author">
+          <span class="testimonial-card__name">Murdock &amp; Wasley Estate Agents</span>
+          <span class="testimonial-card__location">Gloucester</span>
+        </div>
       </div>
-    </div>
 
+      <!-- Duplicate set for seamless loop (aria-hidden so screen readers skip) -->
+      <div class="testimonial-card" aria-hidden="true">
+        <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial-card__text">You explain an idea, he looks at the room for five minutes and comes back with a solution ten times better than what you imagined. Absolute genius at what he does. Reliable, skilled and genuinely talented.</p>
+        <div class="testimonial-card__author">
+          <span class="testimonial-card__name">The Colour Room Gloucester</span>
+          <span class="testimonial-card__location">Gloucester</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card" aria-hidden="true">
+        <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial-card__text">He has transformed what was a cold damp and grotty bathroom I was ashamed of into being my favourite room in my house. Thank you Matt, you're a star.</p>
+        <div class="testimonial-card__author">
+          <span class="testimonial-card__name">Meg Seg</span>
+          <span class="testimonial-card__location">Gloucester</span>
+        </div>
+      </div>
+
+      <div class="testimonial-card" aria-hidden="true">
+        <div class="testimonial-card__quote" aria-hidden="true">&ldquo;</div>
+        <p class="testimonial-card__text">Matt came out promptly to quote and fix our window display when another contractor let us down. We would definitely contact him again for any other jobs.</p>
+        <div class="testimonial-card__author">
+          <span class="testimonial-card__name">Murdock &amp; Wasley Estate Agents</span>
+          <span class="testimonial-card__location">Gloucester</span>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 </section>
