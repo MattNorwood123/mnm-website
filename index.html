@@ -281,7 +281,31 @@
 </div>
 </section>
   </main>
-  <footer id="footer"><!-- Task 9 --></footer>
+  <footer id="footer" class="footer">
+<div class="container footer__inner">
+  <div class="footer__brand">
+    <span class="footer__logo">MNM</span>
+    <p class="footer__tagline">Matt Norwood Maintenance<br>Serving Gloucester &amp; Gloucestershire</p>
+  </div>
+  <nav class="footer__links" aria-label="Footer navigation">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="footer__contact">
+    <a href="tel:07969359683" class="footer__phone">07969 359683</a>
+    <a href="https://wa.me/447969359683" target="_blank" rel="noopener noreferrer" class="footer__wa">WhatsApp</a>
+  </div>
+</div>
+<div class="footer__bottom">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Matt Norwood Maintenance. All rights reserved.</p>
+  </div>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
 
   <script src="js/nav.js"></script>
   <script src="js/gallery.js"></script>
