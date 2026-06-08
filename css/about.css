@@ -81,6 +81,14 @@
 }
 
 @media (max-width: 900px) {
-  .about__inner { grid-template-columns: 1fr; }
-  .about__image { height: 350px; }
+  .about__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about__image { height: 300px; }
+}
+
+@media (max-width: 640px) {
+  .about__image { height: 240px; }
+  .about__text { font-size: 1rem; }
 }

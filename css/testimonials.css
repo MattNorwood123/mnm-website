@@ -75,8 +75,16 @@
 }
 
 @media (max-width: 640px) {
+  .testimonials__track {
+    animation-duration: 22s;
+  }
+
   .testimonial-card {
-    width: 300px;
-    padding: 1.5rem;
+    width: 280px;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .testimonial-card__text {
+    font-size: 0.9rem;
   }
 }
