@@ -27,16 +27,8 @@
     fetch('/', { method: 'POST', body: data })
       .catch(function () { /* silent — WhatsApp is the primary channel */ });
 
-    // Give feedback and reset
-    var btn = form.querySelector('.contact__submit');
-    var original = btn.textContent;
-    btn.textContent = 'Opening WhatsApp…';
-    btn.disabled = true;
+    // Reset and redirect to confirmation page
     form.reset();
-
-    setTimeout(function () {
-      btn.textContent = original;
-      btn.disabled = false;
-    }, 3000);
+    window.location.href = '/thank-you.html';
   });
 })();
