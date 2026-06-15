@@ -75,12 +75,38 @@
 }
 
 @media (max-width: 640px) {
+  .testimonials__marquee {
+    /* Switch from auto-scroll to swipeable snap scroll */
+    -webkit-mask-image: none;
+    mask-image: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .testimonials__marquee::-webkit-scrollbar {
+    display: none;
+  }
+
   .testimonials__track {
-    animation-duration: 22s;
+    animation: none;
+    width: auto;
+    padding: 0 1.25rem;
+    gap: 1rem;
+  }
+
+  /* Hide the duplicated cards — only needed for the infinite loop */
+  .testimonial-card[aria-hidden="true"] {
+    display: none;
   }
 
   .testimonial-card {
-    width: 280px;
+    width: 82vw;
+    flex-shrink: 0;
+    scroll-snap-align: center;
     padding: 1.25rem 1.5rem;
   }
 
