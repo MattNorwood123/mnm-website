@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 100;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   transition: background 0.3s, box-shadow 0.3s;
 }
 
@@ -24,7 +24,7 @@ body.nav-open { overflow: hidden; }
 }
 
 .nav__logo-img {
-  height: 72px;
+  height: 130px;
   width: auto;
   display: block;
 }
@@ -91,7 +91,7 @@ body.nav-open { overflow: hidden; }
 @media (max-width: 768px) {
   .nav__hamburger { display: flex; }
 
-  .nav__logo-img { height: 52px; }
+  .nav__logo-img { height: 80px; }
 
   .nav__links {
     display: none;
