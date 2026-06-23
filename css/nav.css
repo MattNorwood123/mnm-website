@@ -5,6 +5,10 @@
   right: 0;
   z-index: 100;
   padding: 0.5rem 0;
+  background: rgba(26, 26, 26, 0.95);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.4);
 }
 
 body.nav-open { overflow: hidden; }
