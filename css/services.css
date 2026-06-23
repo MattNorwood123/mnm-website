@@ -65,6 +65,18 @@
   .service-card__title { font-size: 1rem; }
 }
 
-@media (max-width: 380px) {
-  .service-card { flex: 1 1 100%; }
+@media (max-width: 400px) {
+  .services__grid { gap: 0.6rem; }
+
+  .service-card {
+    flex: 1 1 calc(50% - 0.6rem);
+    padding: 1.1rem 0.9rem;
+  }
+
+  .service-card__icon svg { width: 26px; height: 26px; }
+
+  .service-card__title { font-size: 0.9rem; }
+
+  .service-card__desc { font-size: 0.82rem; line-height: 1.5; }
 }
+
