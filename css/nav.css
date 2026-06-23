@@ -24,12 +24,9 @@ body.nav-open { overflow: hidden; }
 }
 
 .nav__logo-img {
-  height: 48px;
+  height: 72px;
   width: auto;
   display: block;
-  background: #fff;
-  border-radius: 6px;
-  padding: 0.3rem 0.6rem;
 }
 
 .nav__logo-text {
@@ -93,6 +90,8 @@ body.nav-open { overflow: hidden; }
 
 @media (max-width: 768px) {
   .nav__hamburger { display: flex; }
+
+  .nav__logo-img { height: 52px; }
 
   .nav__links {
     display: none;
