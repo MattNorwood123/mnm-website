@@ -92,14 +92,14 @@
   }
   .about__image {
     height: 300px;
-    object-position: top;
+    object-position: center 20%;
   }
 }
 
 @media (max-width: 640px) {
   .about__image {
     height: 240px;
-    object-position: top;
+    object-position: center 20%;
   }
   .about__text { font-size: 1rem; }
 }
