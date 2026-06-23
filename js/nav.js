@@ -3,10 +3,6 @@ const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
 if (nav && hamburger && navLinks) {
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 50);
-  });
-
   hamburger.addEventListener('click', () => {
     const open = navLinks.classList.toggle('open');
     hamburger.setAttribute('aria-expanded', open);

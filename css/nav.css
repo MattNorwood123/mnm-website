@@ -5,17 +5,9 @@
   right: 0;
   z-index: 100;
   padding: 0.5rem 0;
-  transition: background 0.3s, box-shadow 0.3s;
 }
 
 body.nav-open { overflow: hidden; }
-
-.nav.scrolled {
-  background: rgba(26, 26, 26, 0.95);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 2px 20px rgba(0,0,0,0.4);
-}
 
 .nav__inner {
   display: flex;
