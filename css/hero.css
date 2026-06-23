@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   background: url('../images/hero.jpg') center 40%/cover no-repeat var(--bg-primary);
-  padding-top: 150px;
+  padding-top: 126px;
 }
 
 .hero__overlay {
@@ -63,7 +63,7 @@
 
 @media (max-width: 640px) {
   .hero {
-    padding-top: 96px;
+    padding-top: 84px;
     background-position: 60% 40%;
   }
 
