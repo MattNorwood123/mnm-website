@@ -90,10 +90,16 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .about__image { height: 300px; }
+  .about__image {
+    height: 300px;
+    object-position: top;
+  }
 }
 
 @media (max-width: 640px) {
-  .about__image { height: 240px; }
+  .about__image {
+    height: 240px;
+    object-position: top;
+  }
   .about__text { font-size: 1rem; }
 }
