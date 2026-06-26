@@ -7,7 +7,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("admin/config.yml");
   eleventyConfig.addPassthroughCopy("robots.txt");
-  eleventyConfig.addPassthroughCopy("sitemap.xml");
 
   // Exclude docs and node_modules
   eleventyConfig.ignores.add("docs/**");
@@ -36,6 +35,10 @@ module.exports = function (eleventyConfig) {
       month: "long",
       year: "numeric",
     });
+  });
+
+  eleventyConfig.addFilter("dateISO", function (date) {
+    return new Date(date).toISOString().split("T")[0];
   });
 
   // Slug filter
