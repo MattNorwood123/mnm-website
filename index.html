@@ -75,6 +75,7 @@
        GTM for one of them.
        ================================================================ -->
 
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -414,6 +415,17 @@
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
 
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', function(user) {
+        if (!user) {
+          window.netlifyIdentity.on('login', function() {
+            document.location.href = '/admin/';
+          });
+        }
+      });
+    }
+  </script>
   <script src="js/nav.js"></script>
   <script src="js/gallery.js"></script>
   <script src="js/testimonials.js"></script>
