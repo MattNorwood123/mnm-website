@@ -29,6 +29,6 @@
 
     // Reset and redirect to confirmation page
     form.reset();
-    window.location.href = '/thank-you.html';
+    window.location.href = '/thank-you/';
   });
 })();

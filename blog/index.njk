@@ -1,0 +1,154 @@
+---
+layout: false
+title: Blog | MNM Matt Norwood Maintenance
+description: Tips, guides and advice from Matt Norwood Maintenance — Gloucester's trusted builder.
+permalink: /blog/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ description }}">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="canonical" href="https://mjmaintenance.co.uk/blog/">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mjmaintenance.co.uk/blog/">
+  <meta property="og:image" content="https://mjmaintenance.co.uk/images/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>{{ title }}</title>
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/blog.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NVFCS4QF');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVFCS4QF"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header id="nav">
+    <nav class="nav">
+      <div class="container nav__inner">
+        <a href="/" class="nav__logo">
+          <img src="/images/logo.png" alt="Matt Norwood — Making Your House a Home" class="nav__logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="nav__logo-text" style="display:none">MNM</span>
+        </a>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="/#services" class="nav__link">Services</a></li>
+          <li><a href="/#about" class="nav__link">About</a></li>
+          <li><a href="/#gallery" class="nav__link">Gallery</a></li>
+          <li><a href="/#testimonials" class="nav__link">Reviews</a></li>
+          <li><a href="/blog/" class="nav__link nav__link--active">Blog</a></li>
+          <li><a href="/#contact" class="nav__link nav__link--cta">Get a Quote</a></li>
+        </ul>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blog-hero">
+      <div class="container">
+        <h1 class="blog-hero__title">Tips, Guides & Advice</h1>
+        <p class="blog-hero__sub">From Matt Norwood Maintenance — Gloucester's trusted builder</p>
+      </div>
+    </section>
+
+    <section class="blog-list">
+      <div class="container">
+        {% set posts = collections.blog %}
+        {% set cats = posts | activeCategories %}
+
+        {% if cats.length > 1 %}
+        <div class="blog-filters" id="blogFilters">
+          <button class="blog-filter blog-filter--active" data-cat="all">All</button>
+          {% for cat in cats %}
+          <button class="blog-filter" data-cat="{{ cat | slug }}">{{ cat }}</button>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="blog-grid" id="blogGrid">
+          {% for post in posts %}
+          <article class="blog-card" data-cat="{{ post.data.category | slug }}">
+            {% if post.data.image %}
+            <a href="{{ post.url }}" class="blog-card__img-wrap">
+              <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="blog-card__img" loading="lazy">
+            </a>
+            {% endif %}
+            <div class="blog-card__body">
+              <span class="blog-card__cat">{{ post.data.category }}</span>
+              <h2 class="blog-card__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+              <p class="blog-card__excerpt">{{ post.data.description }}</p>
+              <div class="blog-card__footer">
+                <span class="blog-card__date">{{ post.date | dateDisplay }}</span>
+                <a href="{{ post.url }}" class="blog-card__read">Read more →</a>
+              </div>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="/images/logo.png" alt="MNM" class="footer__logo">
+        <p class="footer__tagline">Making your house a home.</p>
+      </div>
+      <div class="footer__links">
+        <a href="/#services">Services</a>
+        <a href="/#about">About</a>
+        <a href="/#gallery">Gallery</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#contact">Contact</a>
+      </div>
+      <p class="footer__copy">&copy; <script>document.write(new Date().getFullYear())</script> Matt Norwood Maintenance. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/nav.js"></script>
+  <script>
+    (function () {
+      var filters = document.querySelectorAll('.blog-filter');
+      var cards = document.querySelectorAll('.blog-card');
+      if (!filters.length) return;
+      filters.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var cat = btn.dataset.cat;
+          filters.forEach(function (b) { b.classList.remove('blog-filter--active'); });
+          btn.classList.add('blog-filter--active');
+          cards.forEach(function (card) {
+            card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
