@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("images/blog");
   eleventyConfig.addPassthroughCopy("admin/config.yml");
   eleventyConfig.addPassthroughCopy("robots.txt");
 
