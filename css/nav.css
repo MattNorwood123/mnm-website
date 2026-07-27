@@ -73,9 +73,12 @@ body.nav-open { overflow: hidden; }
 
 .nav__google-stars {
   color: #FBBC05;
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
   line-height: 1;
+  font-weight: 900;
+  -webkit-text-stroke: 0;
+  text-shadow: 0 0 0 #FBBC05;
 }
 
 .nav__hamburger {
