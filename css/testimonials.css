@@ -74,56 +74,6 @@
   color: var(--text-muted);
 }
 
-/* Google rating badge */
-.google-rating {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.25rem;
-  background: var(--bg-card);
-  border-radius: 8px;
-  text-decoration: none;
-  color: var(--text-primary);
-  border: 1px solid rgba(255,255,255,0.08);
-  transition: border-color 0.2s, box-shadow 0.2s;
-  flex-wrap: wrap;
-}
-
-.google-rating:hover {
-  border-color: rgba(255,255,255,0.2);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-}
-
-.google-rating__logo {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-}
-
-.google-rating__score {
-  font-size: 1.15rem;
-  font-weight: 700;
-}
-
-.google-rating__stars {
-  color: #FBBC05;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-}
-
-.google-rating__count {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.google-rating__cta {
-  margin-left: 0.25rem;
-  font-size: 0.8rem;
-  color: var(--accent);
-  font-weight: 600;
-}
-
 /* Star ratings on cards */
 .testimonial-card__stars {
   color: #FBBC05;
