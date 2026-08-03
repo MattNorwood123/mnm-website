@@ -1,0 +1,32 @@
+.featured-review {
+  background: var(--bg-card);
+  border-top: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
+  padding: 2.5rem 0;
+}
+
+.featured-review__quote {
+  margin: 0;
+  text-align: center;
+}
+
+.featured-review__quote p {
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--text);
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+
+.featured-review__quote cite {
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 640px) {
+  .featured-review__quote p { font-size: 1rem; }
+}

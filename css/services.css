@@ -85,3 +85,22 @@
   .service-card__desc { font-size: 0.82rem; line-height: 1.5; }
 }
 
+
+.pricing-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.service-link:hover { color: var(--accent-hover); }
