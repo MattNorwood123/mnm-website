@@ -44,6 +44,11 @@ A pergola only cools the house if it's built for the job. A purely decorative on
 
 Getting these details right is the difference between a pergola that genuinely takes the heat off your rooms and one that's just a nice place to stand.
 
+<div class="blog-cta-box">
+  <p><strong>Thinking about adding a pergola or outdoor space in Gloucester?</strong></p>
+  <p>Call us on <a href="tel:07969359683">07969 359683</a> for a free, no-obligation quote — or <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20">WhatsApp us directly</a>.</p>
+</div>
+
 ## A pergola versus running the air con
 
 Plenty of people reach straight for air conditioning when a room overheats, and there's a place for that, especially in home offices or rooms that face the wrong way with no room outside for a structure. But cooling a room that's being flooded with sunlight is like bailing out a boat without plugging the hole. You're paying to fight heat that a bit of shade could have stopped for free.
@@ -69,6 +74,12 @@ Spring is ideal so it's ready before the summer heat and gives climbers a full s
 
 **Timber or aluminium?**
 Timber looks warm and natural and suits most Gloucestershire homes, but needs occasional treating. Aluminium costs more up front and needs almost no maintenance. Neither is wrong; it comes down to your budget and how hands-on you want to be.
+
+<div class="blog-review">
+  <div class="blog-review-stars">★★★★★</div>
+  <blockquote class="blog-review-text">"Excellent — really good job, would definitely recommend."</blockquote>
+  <cite class="blog-review-author">— Dawn Worrall, Google Review</cite>
+</div>
 
 ## The practical takeaway
 

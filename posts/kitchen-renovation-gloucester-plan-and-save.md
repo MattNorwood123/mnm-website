@@ -48,6 +48,11 @@ People often think the cabinets are the big cost. Sometimes they are. But the to
 
 **The surprises** are the third bucket, and every honest builder tells you to keep a little back for them. Older homes especially throw up things you can't see until you open them up. A sensible contingency means a surprise is an inconvenience, not a crisis.
 
+<div class="blog-cta-box">
+  <p><strong>Thinking about a kitchen renovation in Gloucester?</strong></p>
+  <p>Call us on <a href="tel:07969359683">07969 359683</a> for a free, no-obligation quote — or <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20">WhatsApp us directly</a>.</p>
+</div>
+
 ## Simple ways to save without regretting it
 
 Saving money on a kitchen isn't about buying the cheapest of everything. It's about being clever with the big decisions and not cutting corners where you'll feel it later.
@@ -91,6 +96,12 @@ If your layout works and the units are sound underneath, a refit with new doors,
 
 **Do I need to move the plumbing and electrics?**
 Only if you're changing where the sink, hob or appliances live. Keeping them roughly in place is one of the simplest ways to keep costs down.
+
+<div class="blog-review">
+  <div class="blog-review-stars">★★★★★</div>
+  <blockquote class="blog-review-text">"You explain an idea, he looks at the room for five minutes and comes back with a solution ten times better than what you imagined. Absolute genius at what he does."</blockquote>
+  <cite class="blog-review-author">— The Colour Room Gloucester, Google Review</cite>
+</div>
 
 ## The practical takeaway
 

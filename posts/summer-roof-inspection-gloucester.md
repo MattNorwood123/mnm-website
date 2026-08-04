@@ -49,6 +49,11 @@ A real inspection is more than a quick glance from the pavement. A thorough chec
 
 At the end you should get an honest picture: what's fine, what needs watching, and what genuinely needs doing now. No scare tactics, no invented problems. Just a straight answer.
 
+<div class="blog-cta-box">
+  <p><strong>Want your roof inspected before summer ends?</strong></p>
+  <p>Call us on <a href="tel:07969359683">07969 359683</a> for a free, no-obligation quote — or <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20">WhatsApp us directly</a>.</p>
+</div>
+
 ## Small fix now, or big bill later
 
 This is the part people underestimate. A roof problem rarely stays a roof problem. Once water finds a way in, it travels.
@@ -99,6 +104,12 @@ Often, yes, for straightforward jobs like a slipped tile or a bit of pointing. F
 
 **Is summer really that different for the actual repair?**
 Yes. Dry, warm conditions let sealants and mortar cure properly and make working safe. A repair that sets well in summer is far more likely to still be holding when the storms come.
+
+<div class="blog-review">
+  <div class="blog-review-stars">★★★★★</div>
+  <blockquote class="blog-review-text">"Excellent service — timekeeping and attention to detail. Will definitely recommend to friends and use again, again and even again!"</blockquote>
+  <cite class="blog-review-author">— Wendy Lewis, Google Review</cite>
+</div>
 
 ## The practical takeaway
 

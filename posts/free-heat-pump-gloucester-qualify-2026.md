@@ -40,6 +40,11 @@ Many older Gloucestershire properties have:
 
 None of that rules out a heat pump. It just means the honest answer is often "yes, but sort the insulation and maybe the radiators first." A good installer should tell you that up front rather than dropping a heat pump into a leaky house and leaving you with a big bill and a cold lounge.
 
+<div class="blog-cta-box">
+  <p><strong>Interested in home battery or heat pump installation in Gloucester?</strong></p>
+  <p>Call us on <a href="tel:07969359683">07969 359683</a> for a free, no-obligation quote — or <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20">WhatsApp us directly</a>.</p>
+</div>
+
 ## A quick checklist: does your home look like a good candidate?
 
 Before you spend an afternoon chasing grant forms, run through these. The more you can tick, the stronger your position.
@@ -79,6 +84,12 @@ They're cousins. Air conditioning is essentially an air-to-air heat pump that ca
 
 **How long does the funding side take?**
 That varies with the scheme and how busy things are. The sensible move is to check current eligibility early, because criteria and deadlines can change from one year to the next.
+
+<div class="blog-review">
+  <div class="blog-review-stars">★★★★★</div>
+  <blockquote class="blog-review-text">"Excellent service. Really quick to come round and started the job the next week. Really neat and tidy job. Would recommend Matt."</blockquote>
+  <cite class="blog-review-author">— Helen Brooke, Google Review</cite>
+</div>
 
 ## The practical takeaway
 

@@ -39,6 +39,11 @@ Here's the sequence followed on a typical full renovation:
 
 When you see it laid out like that, it's obvious why a full job takes a couple of weeks. Nobody's dragging their feet. It's simply that plaster and adhesive don't care about your schedule.
 
+<div class="blog-cta-box">
+  <p><strong>Planning a bathroom renovation in Gloucester?</strong></p>
+  <p>Call us on <a href="tel:07969359683">07969 359683</a> for a free, no-obligation quote — or <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20">WhatsApp us directly</a>.</p>
+</div>
+
 ## Why drying time is the part people underestimate
 
 This is the single biggest reason a bathroom "takes longer than I thought". You can have a brilliant crew working flat out, and there will still be days where the honest thing to do is wait.
@@ -84,6 +89,12 @@ There's no wrong season, but winter is when a cold, damp bathroom nags at you mo
 
 **Do you handle the whole thing or just parts?**
 The whole thing. Plumbing, electrics, plastering and finishing all sit under one roof, which is exactly what keeps the sequence tight and the timeline honest.
+
+<div class="blog-review">
+  <div class="blog-review-stars">★★★★★</div>
+  <blockquote class="blog-review-text">"He has transformed what was a cold damp and grotty bathroom I was ashamed of into being my favourite room in my house. Thank you Matt, you're a star."</blockquote>
+  <cite class="blog-review-author">— Meg Seg, Gloucester, Google Review</cite>
+</div>
 
 ## The practical takeaway
 

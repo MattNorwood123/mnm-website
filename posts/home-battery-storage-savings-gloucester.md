@@ -37,6 +37,11 @@ People assume the saving is just "free evening electricity", but there are a few
 
 None of these are dramatic on any single day. It's the compounding, month after month, year after year, that turns them into thousands over the lifespan of the system.
 
+<div class="blog-cta-box">
+  <p><strong>Interested in home battery installation in Gloucester?</strong></p>
+  <p>Call us on <a href="tel:07969359683">07969 359683</a> for a free, no-obligation quote — or <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20">WhatsApp us directly</a>.</p>
+</div>
+
 ## Why the long game matters more than the sticker price
 
 A battery is an upfront cost, there's no getting around that. But judging it on day one is like judging a car purely on the price of the first tank of fuel. The real question is what it does over ten or fifteen years.
@@ -83,6 +88,12 @@ Not usually. A battery works alongside an existing array. If your roof needs att
 
 **How much space does it take?**
 Less than most people expect. A tidy wall or floor spot in a garage, utility room, or plant space is often plenty. We plan the location around ventilation and cable runs before anything's fixed.
+
+<div class="blog-review">
+  <div class="blog-review-stars">★★★★★</div>
+  <blockquote class="blog-review-text">"Excellent service. Really quick to come round and started the job the next week. Really neat and tidy job. Would recommend Matt."</blockquote>
+  <cite class="blog-review-author">— Helen Brooke, Google Review</cite>
+</div>
 
 ## The practical takeaway
 

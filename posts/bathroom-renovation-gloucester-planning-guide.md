@@ -50,6 +50,11 @@ A lasting fix rarely comes from one thing. It's the combination that works:
 
 If your current bathroom keeps growing mould, treat it as a symptom rather than a decorating problem. Painting over it buys a few months at most. Solving the moisture path is what makes the difference between a room that stays fresh and one that slides straight back.
 
+<div class="blog-cta-box">
+  <p><strong>Planning a bathroom renovation in Gloucester?</strong></p>
+  <p>Call us on <a href="tel:07969359683">07969 359683</a> for a free, no-obligation quote — or <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20">WhatsApp us directly</a>.</p>
+</div>
+
 ## Set a realistic budget and know what drives it
 
 Bathroom costs vary widely because so much depends on your choices and the state of the existing room. Rather than fixate on a single figure, it helps to understand what actually pushes a budget up or down.
@@ -111,6 +116,12 @@ Not for the whole time, but it helps to be reachable for decisions, especially w
 
 **Can a small bathroom still be transformed?**
 Absolutely. Some of the biggest improvements come from smart layout choices, better light and proper ventilation rather than square footage.
+
+<div class="blog-review">
+  <div class="blog-review-stars">★★★★★</div>
+  <blockquote class="blog-review-text">"He has transformed what was a cold damp and grotty bathroom I was ashamed of into being my favourite room in my house. Thank you Matt, you're a star."</blockquote>
+  <cite class="blog-review-author">— Meg Seg, Gloucester, Google Review</cite>
+</div>
 
 ## The next step
 

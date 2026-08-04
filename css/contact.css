@@ -1,3 +1,10 @@
+.availability-note {
+  font-size: 0.95rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 .contact {
   padding: var(--section-padding);
   background: var(--bg-secondary);
