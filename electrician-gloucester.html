@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Electrician in Gloucester — EICR certificates, fuse board upgrades, full rewires, EV charger installation and more. EICR-qualified, fully insured. Call MJ Maintenance on 07969 359683.">
+  <meta name="description" content="Electrician in Gloucester — EICR certificates, fuse board upgrades, full rewires, EV charger installation. EICR-qualified, fully insured. Free quote: 07969 359683.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1a1a1a">
   <link rel="canonical" href="https://mjmaintenance.co.uk/electrician-gloucester">
   <meta property="og:title" content="Electrician Gloucester | EICR, Rewires & EV Chargers — MJ Maintenance">
-  <meta property="og:description" content="Electrician in Gloucester — EICR certificates, fuse board upgrades, full rewires, EV charger installation and more. EICR-qualified, fully insured. Call 07969 359683.">
+  <meta property="og:description" content="Electrician in Gloucester — EICR certificates, fuse board upgrades, full rewires, EV charger installation. Free quote: 07969 359683.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mjmaintenance.co.uk/electrician-gloucester">
   <meta property="og:image" content="https://mjmaintenance.co.uk/images/hero.jpg">
@@ -22,11 +22,275 @@
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/nav.css">
   <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/services.css">
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NVFCS4QF');</script>
+
+  <style>
+    /* ── Page hero ── */
+    .elec-hero {
+      position: relative;
+      background: var(--bg-primary);
+      padding: 5rem 1.5rem 4rem;
+      overflow: hidden;
+    }
+    .elec-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(232,147,10,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .elec-hero__inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .elec-hero__back {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+    .elec-hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(232,147,10,0.12);
+      border: 1px solid rgba(232,147,10,0.3);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.85rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+    .elec-hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    .elec-hero h1 span { color: var(--accent); }
+    .elec-hero__sub {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .elec-hero__btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .elec-hero__image {
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+    .elec-hero__image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .elec-hero__image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(232,147,10,0.15) 0%, transparent 60%);
+    }
+
+    /* ── Credentials strip ── */
+    .credentials {
+      background: var(--bg-secondary);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 1.5rem 1.5rem;
+    }
+    .credentials__inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .credentials__item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .credentials__item svg { color: var(--accent); flex-shrink: 0; }
+
+    /* ── Services grid section ── */
+    .elec-services {
+      padding: var(--section-padding);
+      background: var(--bg-primary);
+    }
+    .elec-services__header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+    .elec-services__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    .elec-card {
+      background: var(--bg-card);
+      border-radius: 8px;
+      padding: 1.75rem 1.5rem;
+      border-top: 3px solid transparent;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .elec-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+    .elec-card__icon {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .elec-card__title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .elec-card__desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ── Feature sections (alternating image + text) ── */
+    .elec-feature {
+      padding: var(--section-padding);
+    }
+    .elec-feature:nth-child(even) { background: var(--bg-secondary); }
+    .elec-feature:nth-child(odd) { background: var(--bg-primary); }
+    .elec-feature__inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .elec-feature--reverse .elec-feature__inner { direction: rtl; }
+    .elec-feature--reverse .elec-feature__text { direction: ltr; }
+    .elec-feature--reverse .elec-feature__image { direction: ltr; }
+    .elec-feature__image {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .elec-feature__image img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      display: block;
+    }
+    .elec-feature__label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+    .elec-feature__text h2 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .elec-feature__text p {
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+    .elec-feature__text p:last-child { margin-bottom: 0; }
+    .elec-feature__list {
+      list-style: none;
+      margin: 1rem 0;
+    }
+    .elec-feature__list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+    .elec-feature__list li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      margin-top: 0.45rem;
+    }
+
+    /* ── Review strip ── */
+    .elec-review {
+      background: var(--bg-card);
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .elec-review__stars { color: var(--accent); font-size: 1.3rem; margin-bottom: 1rem; }
+    .elec-review__quote {
+      font-size: 1.15rem;
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto 0.75rem;
+      line-height: 1.7;
+    }
+    .elec-review__author { color: var(--text-muted); font-size: 0.9rem; }
+
+    /* ── CTA section ── */
+    .elec-cta {
+      background: var(--bg-secondary);
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    .elec-cta h2 {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .elec-cta p {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+    .elec-cta__btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .elec-hero__inner { grid-template-columns: 1fr; }
+      .elec-hero__image { display: none; }
+      .elec-services__grid { grid-template-columns: repeat(2, 1fr); }
+      .elec-feature__inner { grid-template-columns: 1fr; gap: 2rem; }
+      .elec-feature--reverse .elec-feature__inner { direction: ltr; }
+    }
+    @media (max-width: 600px) {
+      .elec-services__grid { grid-template-columns: 1fr 1fr; }
+      .credentials__inner { gap: 1.25rem; }
+    }
+  </style>
 </head>
 <body>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVFCS4QF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
   <header id="nav">
     <nav class="nav">
       <div class="container nav__inner">
@@ -53,57 +317,201 @@
       </div>
     </nav>
   </header>
+
   <main>
-    <article class="post">
-      <div class="container">
-        <div class="post__meta">
-          <a href="/" class="post__back">← Back to Home</a>
-          <span class="post__category">Electrical</span>
+
+    <!-- Hero -->
+    <section class="elec-hero">
+      <div class="elec-hero__inner">
+        <div class="elec-hero__content">
+          <a href="/" class="elec-hero__back">← Back to Home</a>
+          <div class="elec-hero__badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            EICR Certified
+          </div>
+          <h1>Electrician in<br><span>Gloucester</span></h1>
+          <p class="elec-hero__sub">EICR certificates, fuse board upgrades, full rewires and EV charger installation — all handled by our own qualified team. No subcontractors, no finger-pointing, one point of contact.</p>
+          <div class="elec-hero__btns">
+            <a href="/#contact" class="btn btn-primary">Get a Free Quote</a>
+            <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20electrical%20work%20in%20Gloucester" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp Us</a>
+          </div>
         </div>
-        <h1 class="post__title">Electrician in Gloucester</h1>
-        <div class="post__body">
-          <p>MJ Maintenance now carries EICR certification — meaning we can take on the full range of domestic electrical work across Gloucester and Gloucestershire. From an EICR certificate for a landlord or house sale, to a new fuse board, a full rewire, or an EV charger on your driveway: one team, one point of contact, properly qualified and fully insured.</p>
-
-          <h2>EICR Electrical Certificates</h2>
-          <p>An Electrical Installation Condition Report (EICR) is an inspection of your home's wiring, consumer unit and fixed electrical installations, resulting in a formal certificate. It's a legal requirement for rental properties in England (due every five years or at each change of tenancy), and most buyers and mortgage lenders now want to see one before exchange. We carry out the inspection, issue the certificate, and if any remedial work is needed we can complete it ourselves — no need to chase a second contractor.</p>
-
-          <h2>What we cover</h2>
-          <ul>
-            <li>EICR certificates — landlord, pre-sale, and periodic inspection</li>
-            <li>Consumer unit (fuse board) upgrades — including RCD and RCBO protection</li>
-            <li>Full and partial rewires</li>
-            <li>EV charger installation — home and driveway charging points</li>
-            <li>Additional sockets, USB outlets and data points</li>
-            <li>New lighting circuits — including downlights, bathroom lighting and outdoor</li>
-            <li>Bathroom and en-suite electrical work (Part P compliant)</li>
-            <li>Smoke and carbon monoxide alarm installation</li>
-            <li>Garden and outbuilding electrics</li>
-            <li>Fault-finding and remedial work</li>
-          </ul>
-
-          <h2>Fuse board upgrades</h2>
-          <p>Older consumer units — especially those with rewireable fuses rather than modern circuit breakers — don't meet current BS 7671 standards and can be flagged on an EICR as a C2 or C1 observation. A modern unit with RCD protection means that if a fault develops on a circuit, only that circuit trips rather than the whole house going dark. If your board is original to the property or uses a mix of old and replacement parts, it's usually worth upgrading. We'll let you know honestly whether yours needs changing before we start any inspection work.</p>
-
-          <h2>EV charger installation</h2>
-          <p>Home electric vehicle charging is one of the fastest-growing jobs we're taking on. A dedicated charging point on a spur from your consumer unit charges your car significantly faster than a standard 3-pin socket — most home chargers deliver a full charge overnight where a standard socket would take considerably longer. We assess your current board capacity, run the supply to the most practical point on your driveway or garage wall, and install a unit that's ready for smart tariff scheduling if your energy provider supports it. We handle all the electrical work, from board to charger, and the installation is Part P notified as required.</p>
-
-          <h2>Full rewires</h2>
-          <p>Older Gloucester properties — particularly those that haven't been rewired since the 1970s or 80s — often have wiring that's approaching the end of its safe service life. Rubber-insulated cables, old steel conduit, and outdated earthing arrangements are common findings on EICR inspections of period homes. A full rewire replaces all the fixed wiring in the property and brings everything up to the current wiring regulations. Because we handle plastering and making good ourselves, we can keep the disruption — and the number of people in your home — to a minimum.</p>
-
-          <h2>One trade covering it all</h2>
-          <p>Most electrical jobs don't happen in isolation. A new fuse board often needs the wall making good. An EV charger needs a cable run that might go through a cupboard or cavity. A bathroom rewire sits alongside plastering and tiling. Because MJ Maintenance works across all trades, the electrical work doesn't get done in a silo — it gets planned as part of the whole job, in the right order, without separate contractors stepping over each other.</p>
-
-          <blockquote><p>"Excellent service — timekeeping and attention to detail. Will definitely recommend to friends and use again, again and even again!"</p><cite>— Wendy Lewis ★★★★★</cite></blockquote>
-          <blockquote><p>"Really quick to come round and started the job the next week. Really neat and tidy job. Would recommend Matt."</p><cite>— Helen Brooke ★★★★★</cite></blockquote>
-        </div>
-        <div class="post__cta">
-          <p>Need an EICR certificate, fuse board upgrade, EV charger or rewire in Gloucester? Get a free, no-obligation quote.</p>
-          <a href="/#contact" class="btn btn-primary">Get a Free Quote</a>
-          <a href="https://wa.me/447969359683?text=Hi%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20electrical%20work%20" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp Us</a>
+        <div class="elec-hero__image">
+          <img src="/images/gallery/project-6.jpg" alt="Home renovation work by MJ Maintenance Gloucester">
+          <div class="elec-hero__image-overlay"></div>
         </div>
       </div>
-    </article>
+    </section>
+
+    <!-- Credentials strip -->
+    <div class="credentials">
+      <div class="credentials__inner">
+        <div class="credentials__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          EICR Certified
+        </div>
+        <div class="credentials__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Part P Compliant
+        </div>
+        <div class="credentials__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Fully Insured
+        </div>
+        <div class="credentials__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Free Quotes
+        </div>
+        <div class="credentials__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          No Subcontractors
+        </div>
+      </div>
+    </div>
+
+    <!-- Services grid -->
+    <section class="elec-services">
+      <div class="elec-services__header">
+        <span class="section-label">What we offer</span>
+        <h2 class="section-heading">Electrical Services in Gloucester</h2>
+        <p style="color:var(--text-muted);line-height:1.7;">From a single certificate to a full rewire — everything handled in-house by our own qualified team.</p>
+      </div>
+      <div class="elec-services__grid">
+
+        <div class="elec-card">
+          <div class="elec-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="elec-card__title">EICR Certificates</div>
+          <p class="elec-card__desc">Landlord, pre-sale and periodic inspections. Certificate issued same day. Remedial work completed in-house.</p>
+        </div>
+
+        <div class="elec-card">
+          <div class="elec-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <div class="elec-card__title">Fuse Board Upgrades</div>
+          <p class="elec-card__desc">Modern consumer units with RCD and RCBO protection — up to BS 7671 standards, including making good afterwards.</p>
+        </div>
+
+        <div class="elec-card">
+          <div class="elec-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div class="elec-card__title">EV Charger Installation</div>
+          <p class="elec-card__desc">Dedicated home charging points, smart tariff-ready. We handle everything from board to driveway, Part P notified.</p>
+        </div>
+
+        <div class="elec-card">
+          <div class="elec-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="elec-card__title">Full &amp; Partial Rewires</div>
+          <p class="elec-card__desc">Period properties, outdated rubber wiring, failing earthing — fully rewired and made good, plastering included.</p>
+        </div>
+
+        <div class="elec-card">
+          <div class="elec-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </div>
+          <div class="elec-card__title">Lighting &amp; Sockets</div>
+          <p class="elec-card__desc">New circuits, downlights, USB outlets, bathroom lighting. Additional sockets and data points throughout the home.</p>
+        </div>
+
+        <div class="elec-card">
+          <div class="elec-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <div class="elec-card__title">Fault-Finding &amp; Repairs</div>
+          <p class="elec-card__desc">Tripping circuits, dead sockets, intermittent faults — diagnosed and fixed, not just reset and hoped for the best.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Feature: EICR -->
+    <section class="elec-feature">
+      <div class="elec-feature__inner">
+        <div class="elec-feature__image">
+          <img src="/images/gallery/project-1.jpg" alt="Property inspection and renovation in Gloucester by MJ Maintenance">
+        </div>
+        <div class="elec-feature__text">
+          <span class="elec-feature__label">Legal requirement</span>
+          <h2>EICR Certificates for Landlords &amp; Home Sales</h2>
+          <p>An Electrical Installation Condition Report is a formal inspection of your property's fixed wiring, consumer unit and earthing. It's a legal requirement for rental properties in England — due every five years or at each change of tenancy — and most buyers and mortgage lenders now expect to see one before exchange.</p>
+          <p>We carry out the inspection, issue the certificate, and if any remedial C1 or C2 observations need addressing we can complete that work ourselves, without you chasing a second contractor to come back.</p>
+          <ul class="elec-feature__list">
+            <li>Full inspection of fixed electrical installations</li>
+            <li>Certificate issued on completion</li>
+            <li>Remedial work completed in-house</li>
+            <li>Suitable for lettings, sales, and periodic checks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature: EV chargers -->
+    <section class="elec-feature elec-feature--reverse">
+      <div class="elec-feature__inner">
+        <div class="elec-feature__image">
+          <img src="/images/gallery/project-4.jpg" alt="Home improvement work in Gloucester by MJ Maintenance">
+        </div>
+        <div class="elec-feature__text">
+          <span class="elec-feature__label">Future-ready</span>
+          <h2>EV Charger Installation in Gloucester</h2>
+          <p>A dedicated home charging point charges your car significantly faster than a standard 3-pin socket — most home chargers deliver a full charge overnight where a standard socket takes far longer. We assess your consumer unit capacity, run the supply cable to the most practical point on your driveway or garage wall, and install a unit ready for smart tariff scheduling.</p>
+          <p>Everything from the fuse board to the charger head is handled by us. The installation is Part P notified as required, and we'll advise on grant schemes that may apply to your property.</p>
+          <ul class="elec-feature__list">
+            <li>Board assessment and capacity check</li>
+            <li>Dedicated circuit run to driveway or garage</li>
+            <li>Smart charger units, tariff-scheduling ready</li>
+            <li>Part P notification included</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature: Rewires -->
+    <section class="elec-feature">
+      <div class="elec-feature__inner">
+        <div class="elec-feature__image">
+          <img src="/images/gallery/project-2.jpg" alt="Full renovation work in Gloucester by MJ Maintenance">
+        </div>
+        <div class="elec-feature__text">
+          <span class="elec-feature__label">Older properties</span>
+          <h2>Full Rewires &amp; Fuse Board Upgrades</h2>
+          <p>Many Gloucester properties — particularly those from the 1960s to 1980s — have wiring approaching the end of its safe service life. Rubber-insulated cables, outdated earthing, and consumer units without RCD protection are common EICR findings in older homes.</p>
+          <p>A full rewire replaces all fixed wiring and brings the property up to current BS 7671 regulations. Because our team handles plastering and making good as well as the electrics, you don't end up with bare channels in the wall waiting for a plasterer to come back weeks later.</p>
+          <ul class="elec-feature__list">
+            <li>Full and partial rewires</li>
+            <li>Modern RCD/RCBO consumer unit installation</li>
+            <li>Plastering and making good included</li>
+            <li>Period properties and new builds</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review -->
+    <div class="elec-review">
+      <div class="elec-review__stars">★★★★★</div>
+      <p class="elec-review__quote">"Excellent service — timekeeping and attention to detail. Will definitely recommend to friends and use again, again and even again!"</p>
+      <span class="elec-review__author">— Wendy Lewis, Google Review</span>
+    </div>
+
+    <!-- CTA -->
+    <section class="elec-cta">
+      <h2>Need an Electrician in Gloucester?</h2>
+      <p>Free quotes, no obligation. EICR certificates, rewires, EV chargers and more — call or WhatsApp us today.</p>
+      <div class="elec-cta__btns">
+        <a href="/#contact" class="btn btn-primary">Get a Free Quote</a>
+        <a href="tel:07969359683" class="btn btn-outline">Call 07969 359683</a>
+        <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20electrical%20work%20in%20Gloucester" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </section>
+
   </main>
+
   <footer id="footer" class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
@@ -131,6 +539,7 @@
     </div>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
+
   <script src="/js/nav.js"></script>
 </body>
 </html>
