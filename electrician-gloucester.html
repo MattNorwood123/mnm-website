@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Electrician in Gloucester — EICR certificates, fuse board upgrades, full rewires, EV charger installation. EICR-qualified, fully insured. Free quote: 07969 359683.">
+  <meta name="description" content="Electrician in Gloucester — EICRs, EV charger installation, fuse board upgrades, full rewires and general electrical work. City & Guilds 2391 qualified. Free quote: 07969 359683.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1a1a1a">
-  <link rel="canonical" href="https://mjmaintenance.co.uk/electrician-gloucester">
+  <link rel="canonical" href="https://mjmaintenance.co.uk/electrician-gloucester/">
   <meta property="og:title" content="Electrician Gloucester | EICR, Rewires & EV Chargers — MJ Maintenance">
-  <meta property="og:description" content="Electrician in Gloucester — EICR certificates, fuse board upgrades, full rewires, EV charger installation. Free quote: 07969 359683.">
+  <meta property="og:description" content="Electrician in Gloucester — EICRs, EV charger installation, fuse board upgrades, full rewires. City & Guilds 2391 qualified. Free quote: 07969 359683.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mjmaintenance.co.uk/electrician-gloucester">
+  <meta property="og:url" content="https://mjmaintenance.co.uk/electrician-gloucester/">
   <meta property="og:image" content="https://mjmaintenance.co.uk/images/hero.jpg">
   <title>Electrician Gloucester | EICR, Rewires & EV Chargers — MJ Maintenance</title>
   <link rel="icon" href="/images/favicon.ico" sizes="any">
@@ -23,10 +23,10 @@
   <link rel="stylesheet" href="/css/nav.css">
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/services.css">
+  <link rel="stylesheet" href="/css/landing.css">
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NVFCS4QF');</script>
 
   <style>
-    /* ── Page hero ── */
     .elec-hero {
       position: relative;
       background: var(--bg-primary);
@@ -48,12 +48,7 @@
       gap: 3rem;
       align-items: center;
     }
-    .elec-hero__back {
-      display: inline-block;
-      font-size: 0.85rem;
-      color: var(--accent);
-      margin-bottom: 1.25rem;
-    }
+    .elec-hero__back { display: inline-block; font-size: 0.85rem; color: var(--accent); margin-bottom: 1.25rem; }
     .elec-hero__badge {
       display: inline-flex;
       align-items: center;
@@ -69,80 +64,22 @@
       border-radius: 4px;
       margin-bottom: 1.25rem;
     }
-    .elec-hero h1 {
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 1.25rem;
-    }
+    .elec-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.25rem; }
     .elec-hero h1 span { color: var(--accent); }
-    .elec-hero__sub {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-      margin-bottom: 2rem;
-    }
-    .elec-hero__btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-    .elec-hero__image {
-      border-radius: 8px;
-      overflow: hidden;
-      position: relative;
-    }
-    .elec-hero__image img {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-    }
-    .elec-hero__image-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(232,147,10,0.15) 0%, transparent 60%);
-    }
+    .elec-hero__sub { font-size: 1.05rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 2rem; }
+    .elec-hero__btns { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .elec-hero__image { border-radius: 8px; overflow: hidden; position: relative; }
+    .elec-hero__image img { width: 100%; height: 400px; object-fit: cover; object-position: center; display: block; }
+    .elec-hero__image-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(232,147,10,0.15) 0%, transparent 60%); }
 
-    /* ── Credentials strip ── */
-    .credentials {
-      background: var(--bg-secondary);
-      border-top: 1px solid rgba(255,255,255,0.06);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      padding: 1.5rem 1.5rem;
-    }
-    .credentials__inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2.5rem;
-      flex-wrap: wrap;
-    }
-    .credentials__item {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
+    .credentials { background: var(--bg-secondary); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 1.5rem 1.5rem; }
+    .credentials__inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+    .credentials__item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.88rem; font-weight: 600; }
     .credentials__item svg { color: var(--accent); flex-shrink: 0; }
 
-    /* ── Services grid section ── */
-    .elec-services {
-      padding: var(--section-padding);
-      background: var(--bg-primary);
-    }
-    .elec-services__header {
-      text-align: center;
-      max-width: 600px;
-      margin: 0 auto 3rem;
-    }
-    .elec-services__grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-      max-width: var(--max-width);
-      margin: 0 auto;
-    }
+    .elec-services { padding: var(--section-padding); background: var(--bg-primary); }
+    .elec-services__header { text-align: center; max-width: 600px; margin: 0 auto 3rem; }
+    .elec-services__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; max-width: var(--max-width); margin: 0 auto; }
     .elec-card {
       background: var(--bg-card);
       border-radius: 8px;
@@ -150,141 +87,48 @@
       border-top: 3px solid transparent;
       transition: border-color 0.2s, transform 0.2s;
     }
-    .elec-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-3px);
-    }
-    .elec-card__icon {
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-    .elec-card__title {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    .elec-card__desc {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
+    .elec-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+    .elec-card__icon { color: var(--accent); margin-bottom: 1rem; }
+    .elec-card__title { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .elec-card__desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem; }
+    .elec-card__link { font-size: 0.82rem; color: var(--accent); font-weight: 600; text-decoration: none; }
+    .elec-card__link:hover { text-decoration: underline; }
+    .elec-card__list { list-style: none; margin-top: 0.5rem; }
+    .elec-card__list li { font-size: 0.82rem; color: var(--text-muted); padding: 0.2rem 0; padding-left: 0.9rem; position: relative; }
+    .elec-card__list li::before { content: '·'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
 
-    /* ── Feature sections (alternating image + text) ── */
-    .elec-feature {
-      padding: var(--section-padding);
-    }
-    .elec-feature:nth-child(even) { background: var(--bg-secondary); }
-    .elec-feature:nth-child(odd) { background: var(--bg-primary); }
-    .elec-feature__inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
+    .elec-feature { padding: var(--section-padding); }
+    .elec-feature--light { background: var(--bg-secondary); }
+    .elec-feature--dark { background: var(--bg-primary); }
+    .elec-feature__inner { max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
     .elec-feature--reverse .elec-feature__inner { direction: rtl; }
-    .elec-feature--reverse .elec-feature__text { direction: ltr; }
+    .elec-feature--reverse .elec-feature__text,
     .elec-feature--reverse .elec-feature__image { direction: ltr; }
-    .elec-feature__image {
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    .elec-feature__image img {
-      width: 100%;
-      height: 340px;
-      object-fit: cover;
-      display: block;
-    }
-    .elec-feature__label {
-      display: block;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.6rem;
-    }
-    .elec-feature__text h2 {
-      font-size: clamp(1.4rem, 3vw, 2rem);
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-    .elec-feature__text p {
-      color: var(--text-muted);
-      line-height: 1.75;
-      margin-bottom: 1rem;
-    }
-    .elec-feature__text p:last-child { margin-bottom: 0; }
-    .elec-feature__list {
-      list-style: none;
-      margin: 1rem 0;
-    }
-    .elec-feature__list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.6rem;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-      margin-bottom: 0.5rem;
-    }
-    .elec-feature__list li::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-      flex-shrink: 0;
-      margin-top: 0.45rem;
-    }
+    .elec-feature__image { border-radius: 8px; overflow: hidden; }
+    .elec-feature__image img { width: 100%; height: 340px; object-fit: cover; display: block; }
+    .elec-feature__label { display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
+    .elec-feature__text h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
+    .elec-feature__text p { color: var(--text-muted); line-height: 1.75; margin-bottom: 1rem; }
+    .elec-feature__list { list-style: none; margin: 0.75rem 0 1.25rem; }
+    .elec-feature__list li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0.45rem; }
+    .elec-feature__list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; margin-top: 0.45rem; }
+    .elec-feature__cta { margin-top: 1.25rem; }
 
-    /* ── Review strip ── */
-    .elec-review {
-      background: var(--bg-card);
-      padding: 3rem 1.5rem;
-      text-align: center;
-    }
+    .elec-review { background: var(--bg-card); padding: 3rem 1.5rem; text-align: center; }
     .elec-review__stars { color: var(--accent); font-size: 1.3rem; margin-bottom: 1rem; }
-    .elec-review__quote {
-      font-size: 1.15rem;
-      font-style: italic;
-      max-width: 600px;
-      margin: 0 auto 0.75rem;
-      line-height: 1.7;
-    }
+    .elec-review__quote { font-size: 1.1rem; font-style: italic; max-width: 600px; margin: 0 auto 0.75rem; line-height: 1.7; }
     .elec-review__author { color: var(--text-muted); font-size: 0.9rem; }
 
-    /* ── CTA section ── */
-    .elec-cta {
-      background: var(--bg-secondary);
-      padding: 4rem 1.5rem;
-      text-align: center;
-    }
-    .elec-cta h2 {
-      font-size: clamp(1.5rem, 3vw, 2.2rem);
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-    .elec-cta p {
-      color: var(--text-muted);
-      margin-bottom: 2rem;
-      font-size: 1rem;
-    }
-    .elec-cta__btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
-    /* ── Responsive ── */
+    @media (max-width: 1024px) { .elec-services__grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 900px) {
       .elec-hero__inner { grid-template-columns: 1fr; }
       .elec-hero__image { display: none; }
-      .elec-services__grid { grid-template-columns: repeat(2, 1fr); }
       .elec-feature__inner { grid-template-columns: 1fr; gap: 2rem; }
       .elec-feature--reverse .elec-feature__inner { direction: ltr; }
     }
     @media (max-width: 600px) {
-      .elec-services__grid { grid-template-columns: 1fr 1fr; }
-      .credentials__inner { gap: 1.25rem; }
+      .elec-services__grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .credentials__inner { gap: 1rem; }
     }
   </style>
 </head>
@@ -304,13 +148,13 @@
           <li><a href="/#gallery" class="nav__link">Gallery</a></li>
           <li><a href="/#testimonials" class="nav__link">Reviews</a></li>
           <li><a href="/blog/" class="nav__link">Blog</a></li>
-          <li><a href="/#contact" class="nav__link nav__link--cta">Get a Quote</a></li>
+          <li><a href="#quote" class="nav__link nav__link--cta">Get a Quote</a></li>
         </ul>
         <a href="https://share.google/tIK0TuZtennRZLgTd" target="_blank" rel="noopener noreferrer" class="nav__google-rating" aria-label="5 star Google reviews">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
           <span class="nav__google-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         </a>
-        <a href="tel:07969359683" class="header-phone">07969 359683</a>
+        <a href="tel:07969359683" class="header-phone" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page:'electrician'});">07969 359683</a>
         <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -327,17 +171,18 @@
           <a href="/" class="elec-hero__back">← Back to Home</a>
           <div class="elec-hero__badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-            EICR Certified
+            City &amp; Guilds 2391 Qualified
           </div>
           <h1>Electrician in<br><span>Gloucester</span></h1>
-          <p class="elec-hero__sub">EICR certificates, fuse board upgrades, full rewires and EV charger installation — all handled by our own qualified team. No subcontractors, no finger-pointing, one point of contact.</p>
+          <p class="elec-hero__sub">Professional domestic electrical work throughout Gloucester and Gloucestershire — EICRs, EV chargers, consumer unit replacements, full rewires, lighting, sockets and fault-finding. One team, properly qualified, fully insured.</p>
           <div class="elec-hero__btns">
-            <a href="/#contact" class="btn btn-primary">Get a Free Quote</a>
-            <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20electrical%20work%20in%20Gloucester" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp Us</a>
+            <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+            <a href="tel:07969359683" class="btn btn-outline" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page:'electrician'});">Call 07969 359683</a>
+            <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20electrical%20work%20in%20Gloucester%20" class="btn btn-outline" target="_blank" rel="noopener" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page:'electrician'});">WhatsApp Us</a>
           </div>
         </div>
         <div class="elec-hero__image">
-          <img src="/images/gallery/project-6.jpg" alt="Home renovation work by MJ Maintenance Gloucester">
+          <img src="/images/gallery/project-6.jpg" alt="Home renovation work in Gloucester by MJ Maintenance">
           <div class="elec-hero__image-overlay"></div>
         </div>
       </div>
@@ -347,34 +192,34 @@
     <div class="credentials">
       <div class="credentials__inner">
         <div class="credentials__item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          EICR Certified
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          City &amp; Guilds 2391
         </div>
         <div class="credentials__item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
           Part P Compliant
         </div>
         <div class="credentials__item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           Fully Insured
-        </div>
-        <div class="credentials__item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Free Quotes
         </div>
         <div class="credentials__item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           No Subcontractors
         </div>
+        <div class="credentials__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Free Quotes
+        </div>
       </div>
     </div>
 
-    <!-- Services grid -->
+    <!-- Service overview cards -->
     <section class="elec-services">
       <div class="elec-services__header">
-        <span class="section-label">What we offer</span>
-        <h2 class="section-heading">Electrical Services in Gloucester</h2>
-        <p style="color:var(--text-muted);line-height:1.7;">From a single certificate to a full rewire — everything handled in-house by our own qualified team.</p>
+        <span class="section-label">All electrical services</span>
+        <h2 class="section-heading">Electrical Work in Gloucester</h2>
+        <p style="color:var(--text-muted);line-height:1.7;">From a single socket to a full rewire — scroll down for detail on each service, or jump straight to a quote.</p>
       </div>
       <div class="elec-services__grid">
 
@@ -382,16 +227,9 @@
           <div class="elec-card__icon">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <div class="elec-card__title">EICR Certificates</div>
-          <p class="elec-card__desc">Landlord, pre-sale and periodic inspections. Certificate issued same day. Remedial work completed in-house.</p>
-        </div>
-
-        <div class="elec-card">
-          <div class="elec-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-          </div>
-          <div class="elec-card__title">Fuse Board Upgrades</div>
-          <p class="elec-card__desc">Modern consumer units with RCD and RCBO protection — up to BS 7671 standards, including making good afterwards.</p>
+          <div class="elec-card__title">EICRs</div>
+          <p class="elec-card__desc">Electrical installation condition reports for landlords, pre-sale inspections and periodic checks.</p>
+          <a href="#eicr" class="elec-card__link">More about EICRs →</a>
         </div>
 
         <div class="elec-card">
@@ -399,7 +237,17 @@
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           </div>
           <div class="elec-card__title">EV Charger Installation</div>
-          <p class="elec-card__desc">Dedicated home charging points, smart tariff-ready. We handle everything from board to driveway, Part P notified.</p>
+          <p class="elec-card__desc">Dedicated home charging points fitted from board to driveway. Part P notified, smart-tariff ready.</p>
+          <a href="#ev-chargers" class="elec-card__link">More about EV chargers →</a>
+        </div>
+
+        <div class="elec-card">
+          <div class="elec-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          </div>
+          <div class="elec-card__title">Consumer Unit Replacement</div>
+          <p class="elec-card__desc">Modern RCD and RCBO protection — upgrades old fuse boards to current BS 7671 standards.</p>
+          <a href="#consumer-units" class="elec-card__link">More about consumer units →</a>
         </div>
 
         <div class="elec-card">
@@ -407,7 +255,8 @@
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           </div>
           <div class="elec-card__title">Full &amp; Partial Rewires</div>
-          <p class="elec-card__desc">Period properties, outdated rubber wiring, failing earthing — fully rewired and made good, plastering included.</p>
+          <p class="elec-card__desc">Period properties, outdated rubber wiring, failing earthing. Rewired and made good — plastering included.</p>
+          <a href="#rewiring" class="elec-card__link">More about rewiring →</a>
         </div>
 
         <div class="elec-card">
@@ -415,79 +264,114 @@
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
           </div>
           <div class="elec-card__title">Lighting &amp; Sockets</div>
-          <p class="elec-card__desc">New circuits, downlights, USB outlets, bathroom lighting. Additional sockets and data points throughout the home.</p>
+          <p class="elec-card__desc">New circuits, downlights, USB outlets, bathroom and outdoor lighting. Additional sockets anywhere in the home.</p>
         </div>
 
         <div class="elec-card">
           <div class="elec-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
           </div>
           <div class="elec-card__title">Fault-Finding &amp; Repairs</div>
-          <p class="elec-card__desc">Tripping circuits, dead sockets, intermittent faults — diagnosed and fixed, not just reset and hoped for the best.</p>
+          <p class="elec-card__desc">Tripping circuits, dead sockets, intermittent faults — diagnosed properly and fixed, not just reset.</p>
         </div>
 
       </div>
     </section>
 
-    <!-- Feature: EICR -->
-    <section class="elec-feature">
+    <!-- EICR detail section -->
+    <section class="elec-feature elec-feature--light" id="eicr">
       <div class="elec-feature__inner">
         <div class="elec-feature__image">
-          <img src="/images/gallery/project-1.jpg" alt="Property inspection and renovation in Gloucester by MJ Maintenance">
+          <img src="/images/gallery/project-1.jpg" alt="Property inspection in Gloucester by MJ Maintenance">
         </div>
         <div class="elec-feature__text">
-          <span class="elec-feature__label">Legal requirement</span>
-          <h2>EICR Certificates for Landlords &amp; Home Sales</h2>
-          <p>An Electrical Installation Condition Report is a formal inspection of your property's fixed wiring, consumer unit and earthing. It's a legal requirement for rental properties in England — due every five years or at each change of tenancy — and most buyers and mortgage lenders now expect to see one before exchange.</p>
-          <p>We carry out the inspection, issue the certificate, and if any remedial C1 or C2 observations need addressing we can complete that work ourselves, without you chasing a second contractor to come back.</p>
+          <span class="elec-feature__label">Electrical safety</span>
+          <h2>Electrical Installation Condition Reports (EICRs) in Gloucester</h2>
+          <p>An EICR is a formal inspection of a property's fixed wiring, consumer unit and earthing arrangements, carried out by a qualified electrician and resulting in a written report grading any issues found.</p>
+          <p>Rental properties in England are required to have their electrical installations inspected by a qualified person at least every five years, with a valid report provided to tenants. This is regardless of whether the tenancy changes — the five-year period runs from the date of the last inspection. We'll advise on your current position and issue the certificate on completion.</p>
+          <p>For home sales, most mortgage lenders and buyers now expect to see a recent EICR. If any C1 or C2 observations need addressing, we can carry out the remedial work ourselves without you chasing a separate contractor.</p>
           <ul class="elec-feature__list">
-            <li>Full inspection of fixed electrical installations</li>
-            <li>Certificate issued on completion</li>
+            <li>Landlord EICRs (legal requirement every 5 years)</li>
+            <li>Pre-sale and homebuyer inspections</li>
+            <li>Periodic electrical safety checks</li>
             <li>Remedial work completed in-house</li>
-            <li>Suitable for lettings, sales, and periodic checks</li>
           </ul>
+          <div class="elec-feature__cta">
+            <a href="#quote" class="btn btn-primary">Request an EICR Quote</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Feature: EV chargers -->
-    <section class="elec-feature elec-feature--reverse">
-      <div class="elec-feature__inner">
+    <!-- EV charger detail section -->
+    <section class="elec-feature elec-feature--dark" id="ev-chargers">
+      <div class="elec-feature__inner elec-feature--reverse">
         <div class="elec-feature__image">
           <img src="/images/gallery/project-4.jpg" alt="Home improvement work in Gloucester by MJ Maintenance">
         </div>
         <div class="elec-feature__text">
-          <span class="elec-feature__label">Future-ready</span>
+          <span class="elec-feature__label">EV charging</span>
           <h2>EV Charger Installation in Gloucester</h2>
-          <p>A dedicated home charging point charges your car significantly faster than a standard 3-pin socket — most home chargers deliver a full charge overnight where a standard socket takes far longer. We assess your consumer unit capacity, run the supply cable to the most practical point on your driveway or garage wall, and install a unit ready for smart tariff scheduling.</p>
-          <p>Everything from the fuse board to the charger head is handled by us. The installation is Part P notified as required, and we'll advise on grant schemes that may apply to your property.</p>
+          <p>A dedicated home charging point charges your electric vehicle significantly faster than a standard 3-pin socket — most home chargers deliver a full charge overnight, where a standard socket would take considerably longer.</p>
+          <p>We assess your consumer unit capacity, run the supply to the most practical point on your driveway or garage wall, and install a unit that works with smart energy tariffs if your provider supports them. Everything from the board to the charger head is handled by us, and the installation is Part P notified as required.</p>
           <ul class="elec-feature__list">
-            <li>Board assessment and capacity check</li>
+            <li>Board capacity assessment</li>
             <li>Dedicated circuit run to driveway or garage</li>
-            <li>Smart charger units, tariff-scheduling ready</li>
+            <li>Smart charger units with tariff-scheduling</li>
             <li>Part P notification included</li>
+            <li>Grant scheme advice where applicable</li>
           </ul>
+          <div class="elec-feature__cta">
+            <a href="#quote" class="btn btn-primary">Get an EV Charger Quote</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Feature: Rewires -->
-    <section class="elec-feature">
+    <!-- Consumer unit detail -->
+    <section class="elec-feature elec-feature--light" id="consumer-units">
       <div class="elec-feature__inner">
         <div class="elec-feature__image">
-          <img src="/images/gallery/project-2.jpg" alt="Full renovation work in Gloucester by MJ Maintenance">
+          <img src="/images/gallery/project-2.jpg" alt="Home renovation in Gloucester by MJ Maintenance">
+        </div>
+        <div class="elec-feature__text">
+          <span class="elec-feature__label">Fuse board upgrades</span>
+          <h2>Consumer Unit Replacement in Gloucester</h2>
+          <p>Older consumer units — particularly those with rewireable fuses rather than modern circuit breakers — often don't meet current BS 7671 standards and are commonly flagged as C2 observations on EICR inspections.</p>
+          <p>A modern unit with RCD or RCBO protection means that if a fault develops on a circuit, only that circuit trips rather than the whole house losing power. If your board is original to the property or uses a mix of outdated and replacement parts, an upgrade is usually the sensible move. We'll tell you honestly whether yours needs changing before we begin any inspection.</p>
+          <ul class="elec-feature__list">
+            <li>Full consumer unit replacement</li>
+            <li>RCD and RCBO protection</li>
+            <li>Brings installation up to BS 7671</li>
+            <li>Making good included</li>
+          </ul>
+          <div class="elec-feature__cta">
+            <a href="#quote" class="btn btn-primary">Ask About Consumer Units</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rewiring detail -->
+    <section class="elec-feature elec-feature--dark" id="rewiring">
+      <div class="elec-feature__inner elec-feature--reverse">
+        <div class="elec-feature__image">
+          <img src="/images/gallery/project-5.jpg" alt="Full renovation work in Gloucester by MJ Maintenance">
         </div>
         <div class="elec-feature__text">
           <span class="elec-feature__label">Older properties</span>
-          <h2>Full Rewires &amp; Fuse Board Upgrades</h2>
-          <p>Many Gloucester properties — particularly those from the 1960s to 1980s — have wiring approaching the end of its safe service life. Rubber-insulated cables, outdated earthing, and consumer units without RCD protection are common EICR findings in older homes.</p>
-          <p>A full rewire replaces all fixed wiring and brings the property up to current BS 7671 regulations. Because our team handles plastering and making good as well as the electrics, you don't end up with bare channels in the wall waiting for a plasterer to come back weeks later.</p>
+          <h2>House Rewiring in Gloucester</h2>
+          <p>Many Gloucester properties built between the 1960s and 1980s have wiring approaching the end of its safe service life. Rubber-insulated cables, old steel conduit and outdated earthing arrangements are common findings on EICR inspections of period homes.</p>
+          <p>A full rewire replaces all fixed wiring and brings the property up to current regulations. Because our team handles plastering and making good as well as the electrical work, you don't end up with bare channels in the wall waiting weeks for a plasterer to come back.</p>
           <ul class="elec-feature__list">
             <li>Full and partial rewires</li>
-            <li>Modern RCD/RCBO consumer unit installation</li>
+            <li>Period and older Gloucester properties</li>
+            <li>Renovation and extension rewiring</li>
             <li>Plastering and making good included</li>
-            <li>Period properties and new builds</li>
           </ul>
+          <div class="elec-feature__cta">
+            <a href="#quote" class="btn btn-primary">Ask About Rewiring</a>
+          </div>
         </div>
       </div>
     </section>
@@ -495,18 +379,129 @@
     <!-- Review -->
     <div class="elec-review">
       <div class="elec-review__stars">★★★★★</div>
-      <p class="elec-review__quote">"Excellent service — timekeeping and attention to detail. Will definitely recommend to friends and use again, again and even again!"</p>
-      <span class="elec-review__author">— Wendy Lewis, Google Review</span>
+      <p class="elec-review__quote">"Really quick to come round and started the job the next week. Really neat and tidy job. Would recommend Matt."</p>
+      <span class="elec-review__author">— Helen Brooke, Google Review · Gloucester</span>
     </div>
 
-    <!-- CTA -->
-    <section class="elec-cta">
-      <h2>Need an Electrician in Gloucester?</h2>
-      <p>Free quotes, no obligation. EICR certificates, rewires, EV chargers and more — call or WhatsApp us today.</p>
-      <div class="elec-cta__btns">
-        <a href="/#contact" class="btn btn-primary">Get a Free Quote</a>
-        <a href="tel:07969359683" class="btn btn-outline">Call 07969 359683</a>
-        <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20electrical%20work%20in%20Gloucester" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp Us</a>
+    <!-- Quote form -->
+    <section class="lp-quote" id="quote">
+      <div class="lp-quote__inner">
+        <span class="section-label">Free quote</span>
+        <h2>Get a Free Electrical Quote</h2>
+        <p>Tell us what you need and we'll come back quickly. No call centres — you'll hear from Matt directly.</p>
+        <div class="lp-form">
+          <form name="electrical-quote" method="POST" action="/thank-you" netlify netlify-honeypot="bot-field" id="electricalForm">
+            <input type="hidden" name="form-name" value="electrical-quote">
+            <input type="hidden" name="source-page" value="Electrician Gloucester">
+            <input type="text" name="bot-field" style="display:none" tabindex="-1" aria-hidden="true">
+            <div class="lp-form__row">
+              <div class="lp-form__group">
+                <label for="el-name">Your Name *</label>
+                <input type="text" id="el-name" name="name" placeholder="Jane Smith" required>
+              </div>
+              <div class="lp-form__group">
+                <label for="el-phone">Phone Number *</label>
+                <input type="tel" id="el-phone" name="phone" placeholder="07xxx xxxxxx" required>
+              </div>
+            </div>
+            <div class="lp-form__group">
+              <label for="el-postcode">Postcode *</label>
+              <input type="text" id="el-postcode" name="postcode" placeholder="GL1 2AB" required style="max-width:200px;">
+            </div>
+            <div class="lp-form__group">
+              <label for="el-job">What do you need? *</label>
+              <textarea id="el-job" name="job" placeholder="e.g. EICR certificate for a rental property in Gloucester, or EV charger installation" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary lp-form__submit" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'quote_button_click',page:'electrician'});">Get My Free Quote</button>
+          </form>
+          <div class="lp-form__success" id="electricalSuccess">
+            <h3>Thanks — we've got your request!</h3>
+            <p>Matt will be in touch shortly. For anything urgent, call or WhatsApp on <a href="tel:07969359683" style="color:var(--accent);">07969 359683</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="lp-faq">
+      <div class="lp-faq__header">
+        <span class="section-label">Common questions</span>
+        <h2>Electrical FAQs</h2>
+      </div>
+      <div class="lp-faq__grid">
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Do you carry out EICRs in Gloucester?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes — we carry out domestic EICRs for landlords, home sales and periodic inspections. The report is issued on the day. If any remedial work is needed, we can complete it ourselves.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            How often do landlords need an EICR?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Rental properties in England must have their electrical installations inspected at least every five years by a qualified person. This is based on the date of the last inspection, not the start of a new tenancy. A valid report must be provided to tenants and, on request, to the local housing authority.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Can you install an EV charger at my Gloucester home?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes — we handle the full installation from consumer unit assessment through to the charger on your driveway or garage wall. Installations are Part P notified and we can advise on any applicable grant schemes.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Do you replace old fuse boxes?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes. We replace outdated consumer units with modern boards offering RCD and RCBO protection. Old fuse boxes are commonly flagged as C2 observations on EICR inspections and are worth addressing. We'll tell you whether yours needs changing before we start any work.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Do you carry out full house rewires?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes — full and partial rewires, including older Gloucester properties with rubber-insulated cables or outdated earthing. Because we also handle plastering, we can make good after the electrical work without you needing a second contractor.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Do you handle small electrical jobs?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes — additional sockets, new lighting circuits, fault-finding, bathroom electrics and general electrical repairs are all part of what we do. Get in touch and we'll give you a free quote.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas -->
+    <div class="lp-areas">
+      <h3>Areas We Cover</h3>
+      <div class="lp-areas__list">
+        <span>Gloucester</span>
+        <span>Quedgeley</span>
+        <span>Churchdown</span>
+        <span>Brockworth</span>
+        <span>Longlevens</span>
+        <span>Hucclecote</span>
+        <span>Tuffley</span>
+        <span>Barnwood</span>
+        <span>Abbeymead</span>
+        <span>Cheltenham</span>
+        <span>Stroud</span>
+        <span>Tewkesbury</span>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <section style="background:var(--bg-primary);padding:3.5rem 1.5rem;text-align:center;">
+      <span class="section-label">Get in touch</span>
+      <h2 class="section-heading" style="margin-bottom:0.75rem;">Need an Electrician in Gloucester?</h2>
+      <p style="color:var(--text-muted);margin-bottom:2rem;">Free quotes, no call centres. EICRs, EV chargers, rewires and more — call, WhatsApp or fill in the form above.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+        <a href="tel:07969359683" class="btn btn-outline" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page:'electrician'});">Call 07969 359683</a>
+        <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20electrical%20work%20in%20Gloucester%20" class="btn btn-outline" target="_blank" rel="noopener" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page:'electrician'});">WhatsApp Us</a>
       </div>
     </section>
 
@@ -522,14 +517,14 @@
       <nav class="footer__links" aria-label="Footer navigation">
         <a href="/#services">Services</a>
         <a href="/#about">About</a>
-        <a href="/#gallery">Gallery</a>
-        <a href="/#testimonials">Reviews</a>
+        <a href="/handyman-gloucester/">Handyman</a>
+        <a href="/bathroom-renovation-gloucester">Bathrooms</a>
         <a href="/blog/">Blog</a>
-        <a href="/#contact">Contact</a>
+        <a href="#quote">Get a Quote</a>
       </nav>
       <div class="footer__contact">
-        <a href="tel:07969359683" class="footer__phone">07969 359683</a>
-        <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20" target="_blank" rel="noopener noreferrer" class="footer__wa">WhatsApp</a>
+        <a href="tel:07969359683" class="footer__phone" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page:'electrician'});">07969 359683</a>
+        <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20" target="_blank" rel="noopener noreferrer" class="footer__wa" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page:'electrician'});">WhatsApp</a>
       </div>
     </div>
     <div class="footer__bottom">
@@ -540,6 +535,48 @@
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
 
+  <!-- Mobile sticky CTA -->
+  <div class="sticky-cta" aria-label="Quick contact">
+    <a href="tel:07969359683" class="sticky-cta__call" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page:'electrician'});">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 5.9 5.9l.92-.93a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.45 16z"/></svg>
+      Call
+    </a>
+    <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20electrical%20work%20in%20Gloucester%20" class="sticky-cta__wa" target="_blank" rel="noopener" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page:'electrician'});">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+    <a href="#quote" class="sticky-cta__quote">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Get Quote
+    </a>
+  </div>
+
   <script src="/js/nav.js"></script>
+  <script>
+    document.querySelectorAll('.lp-faq__q').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.lp-faq__item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.lp-faq__item').forEach(function(i) { i.classList.remove('open'); });
+        if (!isOpen) item.classList.add('open');
+        this.setAttribute('aria-expanded', !isOpen);
+      });
+    });
+
+    document.getElementById('electricalForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var form = this;
+      var data = new FormData(form);
+      fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(data).toString() })
+        .then(function() {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({event: 'form_submission', conversionType: 'electrical_quote'});
+          form.style.display = 'none';
+          document.getElementById('electricalSuccess').style.display = 'block';
+          setTimeout(function() { window.location.href = '/thank-you'; }, 2500);
+        })
+        .catch(function() { form.submit(); });
+    });
+  </script>
 </body>
 </html>
