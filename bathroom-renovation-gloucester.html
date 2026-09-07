@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Full bathroom renovations across Gloucester and Gloucestershire. Family-run, hands-on, no subcontractors. Free quote — call 07969 359683.">
+  <meta name="description" content="Bathroom renovations in Gloucester — full fit-outs, bathroom fitting, tiling, wet rooms and suite replacements. One point of contact for the whole job. Free quote: 07969 359683.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1a1a1a">
-  <link rel="canonical" href="https://mjmaintenance.co.uk/bathroom-renovation-gloucester">
-  <meta property="og:title" content="Bathroom Renovation Gloucester | Full Fit-Outs — MJ Maintenance">
-  <meta property="og:description" content="Full bathroom renovations across Gloucester and Gloucestershire. Family-run, hands-on, no subcontractors. Free quote — call 07969 359683.">
+  <link rel="canonical" href="https://mjmaintenance.co.uk/bathroom-renovation-gloucester/">
+  <meta property="og:title" content="Bathroom Renovations Gloucester | Bathroom Fitters & Tiling — MJ Maintenance">
+  <meta property="og:description" content="Full bathroom renovations in Gloucester — fitting, tiling, plumbing and electrics all under one roof. Free quote: 07969 359683.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mjmaintenance.co.uk/bathroom-renovation-gloucester">
+  <meta property="og:url" content="https://mjmaintenance.co.uk/bathroom-renovation-gloucester/">
   <meta property="og:image" content="https://mjmaintenance.co.uk/images/gallery/project-3.jpg">
-  <title>Bathroom Renovation Gloucester | Full Fit-Outs — MJ Maintenance</title>
+  <title>Bathroom Renovations Gloucester | Bathroom Fitters & Tiling — MJ Maintenance</title>
   <link rel="icon" href="/images/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +22,118 @@
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/nav.css">
   <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/services.css">
+  <link rel="stylesheet" href="/css/landing.css">
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NVFCS4QF');</script>
+
+  <style>
+    .bath-hero {
+      position: relative;
+      background: var(--bg-primary);
+      padding: 5rem 1.5rem 4rem;
+      overflow: hidden;
+    }
+    .bath-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(232,147,10,0.1) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .bath-hero__inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .bath-hero__back { display: inline-block; font-size: 0.85rem; color: var(--accent); margin-bottom: 1.25rem; }
+    .bath-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.25rem; }
+    .bath-hero h1 span { color: var(--accent); }
+    .bath-hero__sub { font-size: 1.05rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 2rem; }
+    .bath-hero__btns { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .bath-hero__image { border-radius: 8px; overflow: hidden; }
+    .bath-hero__image img { width: 100%; height: 420px; object-fit: cover; object-position: center; display: block; }
+
+    /* Trust strip */
+    .bath-trust { background: var(--bg-secondary); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; }
+    .bath-trust__inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+    .bath-trust__item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; font-weight: 600; }
+    .bath-trust__item svg { color: var(--accent); flex-shrink: 0; }
+
+    /* Services grid */
+    .bath-services { padding: var(--section-padding); background: var(--bg-primary); }
+    .bath-services__header { text-align: center; max-width: 600px; margin: 0 auto 2.5rem; }
+    .bath-services__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: var(--max-width); margin: 0 auto; }
+    .bath-card {
+      background: var(--bg-card);
+      border-radius: 8px;
+      padding: 1.5rem 1.25rem;
+      border-top: 3px solid transparent;
+      transition: border-color 0.2s, transform 0.2s;
+      text-align: center;
+    }
+    .bath-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+    .bath-card__icon { color: var(--accent); margin: 0 auto 0.75rem; }
+    .bath-card__title { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .bath-card__desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* Feature sections */
+    .bath-feature { padding: var(--section-padding); }
+    .bath-feature--light { background: var(--bg-secondary); }
+    .bath-feature--dark { background: var(--bg-primary); }
+    .bath-feature__inner { max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .bath-feature--reverse .bath-feature__inner { direction: rtl; }
+    .bath-feature--reverse .bath-feature__text,
+    .bath-feature--reverse .bath-feature__image { direction: ltr; }
+    .bath-feature__image { border-radius: 8px; overflow: hidden; }
+    .bath-feature__image img { width: 100%; height: 360px; object-fit: cover; display: block; }
+    .bath-feature__label { display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
+    .bath-feature__text h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
+    .bath-feature__text p { color: var(--text-muted); line-height: 1.75; margin-bottom: 1rem; }
+    .bath-feature__list { list-style: none; margin: 0.75rem 0 1.25rem; }
+    .bath-feature__list li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0.45rem; }
+    .bath-feature__list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; margin-top: 0.45rem; }
+
+    /* Project gallery (2-up image cards) */
+    .bath-gallery { padding: var(--section-padding); background: var(--bg-secondary); }
+    .bath-gallery__header { text-align: center; max-width: 560px; margin: 0 auto 2.5rem; }
+    .bath-gallery__grid { max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .bath-gallery__card { border-radius: 8px; overflow: hidden; background: var(--bg-card); }
+    .bath-gallery__card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .bath-gallery__info { padding: 1rem 1.25rem; }
+    .bath-gallery__title { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .bath-gallery__desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* Reviews */
+    .bath-reviews { padding: var(--section-padding); background: var(--bg-primary); }
+    .bath-reviews__header { text-align: center; margin-bottom: 2rem; }
+    .bath-reviews__grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .bath-review-card { background: var(--bg-card); border-radius: 8px; padding: 1.75rem; border-left: 3px solid var(--accent); }
+    .bath-review-card__stars { color: var(--accent); font-size: 1rem; margin-bottom: 0.75rem; }
+    .bath-review-card__text { font-style: italic; color: var(--text); font-size: 0.92rem; line-height: 1.7; margin-bottom: 0.75rem; }
+    .bath-review-card__author { font-size: 0.82rem; color: var(--text-muted); }
+
+    @media (max-width: 1024px) { .bath-services__grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 900px) {
+      .bath-hero__inner { grid-template-columns: 1fr; }
+      .bath-hero__image { display: none; }
+      .bath-feature__inner { grid-template-columns: 1fr; gap: 2rem; }
+      .bath-feature--reverse .bath-feature__inner { direction: ltr; }
+      .bath-gallery__grid { grid-template-columns: 1fr 1fr; }
+      .bath-reviews__grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .bath-services__grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+      .bath-gallery__grid { grid-template-columns: 1fr; }
+      .bath-trust__inner { gap: 1rem; }
+    }
+  </style>
 </head>
 <body>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVFCS4QF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
   <header id="nav">
     <nav class="nav">
       <div class="container nav__inner">
@@ -40,54 +147,391 @@
           <li><a href="/#gallery" class="nav__link">Gallery</a></li>
           <li><a href="/#testimonials" class="nav__link">Reviews</a></li>
           <li><a href="/blog/" class="nav__link">Blog</a></li>
-          <li><a href="/#contact" class="nav__link nav__link--cta">Get a Quote</a></li>
+          <li><a href="#quote" class="nav__link nav__link--cta">Get a Quote</a></li>
         </ul>
         <a href="https://share.google/tIK0TuZtennRZLgTd" target="_blank" rel="noopener noreferrer" class="nav__google-rating" aria-label="5 star Google reviews">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
           <span class="nav__google-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         </a>
+        <a href="tel:07969359683" class="header-phone" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page:'bathrooms'});">07969 359683</a>
         <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
     </nav>
   </header>
+
   <main>
-    <article class="post">
-      <div class="container">
-        <div class="post__meta">
-          <a href="/" class="post__back">← Back to Home</a>
-          <span class="post__category">Bathrooms</span>
+
+    <!-- Hero -->
+    <section class="bath-hero">
+      <div class="bath-hero__inner">
+        <div>
+          <a href="/" class="bath-hero__back">← Back to Home</a>
+          <h1>Bathroom Renovations<br>in <span>Gloucester</span></h1>
+          <p class="bath-hero__sub">Full bathroom renovations and fitting across Gloucester and Gloucestershire — plumbing, tiling, plastering and electrics all handled by one team in the right order. One point of contact, start to finish.</p>
+          <div class="bath-hero__btns">
+            <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+            <a href="tel:07969359683" class="btn btn-outline" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page:'bathrooms'});">Call 07969 359683</a>
+            <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20a%20bathroom%20renovation%20in%20Gloucester%20" class="btn btn-outline" target="_blank" rel="noopener" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page:'bathrooms'});">WhatsApp Us</a>
+          </div>
         </div>
-        <h1 class="post__title">Bathroom Renovation in Gloucester</h1>
-        <img src="/images/gallery/project-3.jpg" alt="Marble bathroom fit-out in Gloucester by MJ Maintenance" class="post__hero">
-        <div class="post__body">
-          <p>MJ Maintenance handles full bathroom renovations across Gloucester and Gloucestershire — from a simple suite swap to a complete strip-out and refit. Matt manages the whole job himself: plumbing, tiling, plastering and electrics all under one roof, in the right sequence, with no gaps between trades.</p>
-          <h2>What we cover</h2>
-          <ul>
-            <li>Full strip-out and refit</li>
-            <li>Like-for-like suite replacement</li>
-            <li>Wet rooms and walk-in showers</li>
-            <li>Tiling — floor and wall</li>
-            <li>Plastering and making good</li>
-            <li>New lighting and extractor fans</li>
-            <li>En-suite and loft bathroom conversions</li>
-          </ul>
-          <h2>One person, start to finish</h2>
-          <p>Most bathroom jobs go wrong because of coordination — the plasterer arrives before the first-fix plumbing is done, the tiler is booked for a day the walls aren't ready. Because Matt handles all the trades himself, the sequence is right every time. You get a realistic timeline up front and one person to call if anything needs attention.</p>
-          <h2>How long does it take?</h2>
-          <p>A straightforward refresh takes around a week. A full renovation with layout changes typically runs two weeks. Read the full guide: <a href="/blog/how-long-does-bathroom-renovation-take/">How long does a bathroom renovation take?</a></p>
-          <blockquote><p>"He has transformed what was a cold damp and grotty bathroom I was ashamed of into being my favourite room in my house. Thank you Matt, you're a star."</p><cite>— Meg Seg ★★★★★</cite></blockquote>
-          <blockquote><p>"You explain an idea, he looks at the room for five minutes and comes back with a solution ten times better than what you imagined."</p><cite>— The Colour Room Gloucester ★★★★★</cite></blockquote>
-        </div>
-        <div class="post__cta">
-          <p>Ready to transform your bathroom? Get a free, no-obligation quote.</p>
-          <a href="/#contact" class="btn btn-primary">Get a Free Quote</a>
-          <a href="tel:07969359683" class="btn btn-outline">Call 07969 359683</a>
+        <div class="bath-hero__image">
+          <img src="/images/gallery/project-3.jpg" alt="Marble bathroom renovation in Gloucester by MJ Maintenance">
         </div>
       </div>
-    </article>
+    </section>
+
+    <!-- Trust strip -->
+    <div class="bath-trust">
+      <div class="bath-trust__inner">
+        <div class="bath-trust__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          One Point of Contact
+        </div>
+        <div class="bath-trust__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          All Trades In-House
+        </div>
+        <div class="bath-trust__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Fully Insured
+        </div>
+        <div class="bath-trust__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Gloucester-based
+        </div>
+        <div class="bath-trust__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Free Quotes
+        </div>
+      </div>
+    </div>
+
+    <!-- Services grid -->
+    <section class="bath-services">
+      <div class="bath-services__header">
+        <span class="section-label">Complete service</span>
+        <h2 class="section-heading">Everything Your Bathroom Renovation Needs</h2>
+        <p style="color:var(--text-muted);line-height:1.7;">We manage every trade — no coordinating separate plumbers, tilers and electricians.</p>
+      </div>
+      <div class="bath-services__grid">
+
+        <div class="bath-card">
+          <div class="bath-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+          </div>
+          <div class="bath-card__title">Full Strip-Out</div>
+          <p class="bath-card__desc">Everything removed cleanly and disposed of</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="bath-card__title">Plumbing</div>
+          <p class="bath-card__desc">First and second fix, bath, shower and basin</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div class="bath-card__title">Electrics</div>
+          <p class="bath-card__desc">Lighting, shaver sockets, extractor fans</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="9"/></svg>
+          </div>
+          <div class="bath-card__title">Tiling</div>
+          <p class="bath-card__desc">Wall and floor tiling, including wet rooms</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="bath-card__title">Plastering</div>
+          <p class="bath-card__desc">Making good walls and ceilings throughout</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <div class="bath-card__title">Suite &amp; Fitting</div>
+          <p class="bath-card__desc">Bath, shower, basin, toilet and vanity units</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/></svg>
+          </div>
+          <div class="bath-card__title">Flooring</div>
+          <p class="bath-card__desc">Floor tiling, vinyl and waterproof finishes</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="bath-card__title">Finishing &amp; Snagging</div>
+          <p class="bath-card__desc">Silicone, trims, final clean and sign-off</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Feature: one point of contact -->
+    <section class="bath-feature bath-feature--light">
+      <div class="bath-feature__inner">
+        <div class="bath-feature__image">
+          <img src="/images/gallery/project-3.jpg" alt="Marble bathroom renovation in Gloucester by MJ Maintenance">
+        </div>
+        <div class="bath-feature__text">
+          <span class="bath-feature__label">One contractor</span>
+          <h2>One Point of Contact for the Whole Job</h2>
+          <p>Most bathroom renovations go wrong at the joins between trades — the plasterer arrives before first-fix plumbing is done, the tiler's booked while the adhesive is still wet, the electrician can't come until the walls are ready. When you have separate contractors, you become the project manager by default.</p>
+          <p>MJ Maintenance handles every part of a bathroom renovation directly — plumbing, electrics, plastering, tiling and fitting. That means the sequence is right, the timeline is realistic, and there's one person to call if anything needs attention. You deal with us from the first conversation to the day we hand back your keys.</p>
+          <ul class="bath-feature__list">
+            <li>All trades handled in-house — no subcontractors</li>
+            <li>Correct sequence every time — no waiting for other trades</li>
+            <li>One realistic timeline from the start</li>
+            <li>One person accountable from quote to completion</li>
+          </ul>
+          <div style="margin-top:1.25rem;">
+            <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature: tiling -->
+    <section class="bath-feature bath-feature--dark bath-feature--reverse">
+      <div class="bath-feature__inner">
+        <div class="bath-feature__image">
+          <img src="/images/gallery/project-5.jpg" alt="Professional tiling in Gloucester by MJ Maintenance">
+        </div>
+        <div class="bath-feature__text">
+          <span class="bath-feature__label">Professional tiling</span>
+          <h2>Tiling in Gloucester — Walls, Floors &amp; Wet Rooms</h2>
+          <p>Tiling is one of the parts of a bathroom renovation that shows most when it's done wrong. Inconsistent grout lines, tiles that aren't level, or adhesive that wasn't right for the substrate — these are the things that come back. We tile to last, using the right preparation for each surface.</p>
+          <ul class="bath-feature__list">
+            <li>Bathroom wall tiling — large format and standard tiles</li>
+            <li>Floor tiling — porcelain, ceramic and natural stone</li>
+            <li>Wet room tanking and tiling</li>
+            <li>Shower enclosure and tray tiling</li>
+            <li>Feature walls and decorative layouts</li>
+            <li>Kitchen splashbacks</li>
+          </ul>
+          <div style="margin-top:1.25rem;">
+            <a href="#quote" class="btn btn-primary">Get a Tiling Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature: wet rooms / types -->
+    <section class="bath-feature bath-feature--light">
+      <div class="bath-feature__inner">
+        <div class="bath-feature__image">
+          <img src="/images/gallery/project-2.jpg" alt="Bathroom renovation in Gloucester by MJ Maintenance">
+        </div>
+        <div class="bath-feature__text">
+          <span class="bath-feature__label">All bathroom types</span>
+          <h2>Full Renovations, Refreshes &amp; Conversions</h2>
+          <p>Whether you want a complete overhaul of an outdated bathroom, a like-for-like suite swap, or a conversion to a wet room or en-suite, we can scope it and price it honestly.</p>
+          <ul class="bath-feature__list">
+            <li>Full bathroom strip-out and renovation</li>
+            <li>Like-for-like suite replacement</li>
+            <li>Wet room design and installation</li>
+            <li>Walk-in shower conversions</li>
+            <li>En-suite creation from existing space</li>
+            <li>Loft bathroom conversions</li>
+          </ul>
+          <p>A straightforward refresh typically takes around a week. A full renovation with layout changes usually runs two to three weeks. Read the full guide: <a href="/blog/how-long-does-bathroom-renovation-take/" style="color:var(--accent);">How long does a bathroom renovation take?</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project gallery -->
+    <section class="bath-gallery">
+      <div class="bath-gallery__header">
+        <span class="section-label">Recent projects</span>
+        <h2 class="section-heading">Bathrooms We've Completed in Gloucester</h2>
+        <p style="color:var(--text-muted);line-height:1.7;">A sample of recent bathroom renovations across Gloucester and Gloucestershire.</p>
+      </div>
+      <div class="bath-gallery__grid">
+        <div class="bath-gallery__card">
+          <img src="/images/gallery/project-3.jpg" alt="Marble bathroom renovation Gloucester">
+          <div class="bath-gallery__info">
+            <div class="bath-gallery__title">Marble Bathroom Renovation</div>
+            <p class="bath-gallery__desc">Full strip-out, new suite, marble-effect tiling, floor, lighting and extractor. Gloucester.</p>
+          </div>
+        </div>
+        <div class="bath-gallery__card">
+          <img src="/images/gallery/project-2.jpg" alt="Bathroom renovation Gloucester">
+          <div class="bath-gallery__info">
+            <div class="bath-gallery__title">Full Bathroom Refit</div>
+            <p class="bath-gallery__desc">Plumbing, electrics, plastering, full tiling and new suite. Gloucestershire.</p>
+          </div>
+        </div>
+        <div class="bath-gallery__card">
+          <img src="/images/gallery/project-1.jpg" alt="Bathroom renovation project Gloucester">
+          <div class="bath-gallery__info">
+            <div class="bath-gallery__title">Bathroom &amp; En-Suite</div>
+            <p class="bath-gallery__desc">Two-bathroom project — full renovation and new en-suite creation. Gloucester.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="bath-reviews">
+      <div class="bath-reviews__header">
+        <span class="section-label">What customers say</span>
+        <h2 class="section-heading">Gloucester Bathroom Reviews</h2>
+      </div>
+      <div class="bath-reviews__grid">
+        <div class="bath-review-card">
+          <div class="bath-review-card__stars">★★★★★</div>
+          <p class="bath-review-card__text">"He has transformed what was a cold damp and grotty bathroom I was ashamed of into being my favourite room in my house. Thank you Matt, you're a star."</p>
+          <span class="bath-review-card__author">— Meg Seg, Google Review · Gloucester</span>
+        </div>
+        <div class="bath-review-card">
+          <div class="bath-review-card__stars">★★★★★</div>
+          <p class="bath-review-card__text">"You explain an idea, he looks at the room for five minutes and comes back with a solution ten times better than what you imagined. Absolute genius at what he does."</p>
+          <span class="bath-review-card__author">— The Colour Room Gloucester, Google Review</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote form -->
+    <section class="lp-quote" id="quote">
+      <div class="lp-quote__inner">
+        <span class="section-label">Free quote</span>
+        <h2>Get a Free Bathroom Quote</h2>
+        <p>Tell us about your bathroom and we'll come back quickly with a clear, honest price. No obligation.</p>
+        <div class="lp-form">
+          <form name="bathroom-quote" method="POST" action="/thank-you" netlify netlify-honeypot="bot-field" id="bathroomForm">
+            <input type="hidden" name="form-name" value="bathroom-quote">
+            <input type="hidden" name="source-page" value="Bathroom Renovations Gloucester">
+            <input type="text" name="bot-field" style="display:none" tabindex="-1" aria-hidden="true">
+            <div class="lp-form__row">
+              <div class="lp-form__group">
+                <label for="ba-name">Your Name *</label>
+                <input type="text" id="ba-name" name="name" placeholder="Jane Smith" required>
+              </div>
+              <div class="lp-form__group">
+                <label for="ba-phone">Phone Number *</label>
+                <input type="tel" id="ba-phone" name="phone" placeholder="07xxx xxxxxx" required>
+              </div>
+            </div>
+            <div class="lp-form__group">
+              <label for="ba-postcode">Postcode *</label>
+              <input type="text" id="ba-postcode" name="postcode" placeholder="GL1 2AB" required style="max-width:200px;">
+            </div>
+            <div class="lp-form__group">
+              <label for="ba-job">Tell us about your bathroom *</label>
+              <textarea id="ba-job" name="job" placeholder="e.g. Full bathroom renovation — strip out existing suite, replumb, tile and refit. Roughly 2m x 2.5m room in Gloucester." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary lp-form__submit" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'quote_button_click',page:'bathrooms'});">Get My Free Quote</button>
+          </form>
+          <div class="lp-form__success" id="bathroomSuccess">
+            <h3>Thanks — we've got your request!</h3>
+            <p>Matt will be in touch shortly. For anything urgent, call or WhatsApp on <a href="tel:07969359683" style="color:var(--accent);">07969 359683</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="lp-faq">
+      <div class="lp-faq__header">
+        <span class="section-label">Common questions</span>
+        <h2>Bathroom Renovation FAQs</h2>
+      </div>
+      <div class="lp-faq__grid">
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Do you manage complete bathroom renovations?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes — we handle the whole job. Strip-out, plumbing, electrics, plastering, tiling, fitting and finishing. You deal with one person throughout and don't need to coordinate separate tradespeople.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Can you handle the plumbing and electrics as well as the tiling?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes — all of it. Plumbing, electrics (including lighting, extractor fans and shaver sockets), plastering, tiling and fitting are all done by our own team. Nothing is subcontracted out.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            How long does a bathroom renovation take?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">A straightforward like-for-like suite swap typically takes around a week. A full renovation including layout changes, new tiling and plastering usually runs two to three weeks. We give you a realistic timeline from the start — read the full breakdown in our <a href="/blog/how-long-does-bathroom-renovation-take/" style="color:var(--accent);">bathroom renovation timeline guide</a>.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Can you remove the old bathroom?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes — strip-out and disposal is part of the job. We clear the old suite, tiles, flooring and any fixtures, dispose of everything properly, and leave the room ready for the new installation.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Do you install wet rooms and walk-in showers?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes — wet rooms, walk-in showers and shower conversions are all part of what we do, including the tanking (waterproofing) which is the part most often skimped on and causes problems later.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Can I supply my own tiles and suite?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Absolutely — supply and fit or fit only. If you've chosen your own tiles, suite or fixtures we'll fit them. We can also advise on what to buy and supply materials ourselves if you'd prefer.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas -->
+    <div class="lp-areas">
+      <h3>Areas We Cover</h3>
+      <div class="lp-areas__list">
+        <span>Gloucester</span>
+        <span>Quedgeley</span>
+        <span>Churchdown</span>
+        <span>Brockworth</span>
+        <span>Longlevens</span>
+        <span>Hucclecote</span>
+        <span>Tuffley</span>
+        <span>Barnwood</span>
+        <span>Abbeymead</span>
+        <span>Cheltenham</span>
+        <span>Stroud</span>
+        <span>Tewkesbury</span>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <section style="background:var(--bg-primary);padding:3.5rem 1.5rem;text-align:center;">
+      <span class="section-label">Get in touch</span>
+      <h2 class="section-heading" style="margin-bottom:0.75rem;">Ready to Transform Your Bathroom?</h2>
+      <p style="color:var(--text-muted);margin-bottom:2rem;">Free quotes across Gloucester and Gloucestershire. Call, WhatsApp or fill in the form above.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+        <a href="tel:07969359683" class="btn btn-outline" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page:'bathrooms'});">Call 07969 359683</a>
+        <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20a%20bathroom%20renovation%20in%20Gloucester%20" class="btn btn-outline" target="_blank" rel="noopener" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page:'bathrooms'});">WhatsApp Us</a>
+      </div>
+    </section>
+
   </main>
+
   <footer id="footer" class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
@@ -98,14 +542,14 @@
       <nav class="footer__links" aria-label="Footer navigation">
         <a href="/#services">Services</a>
         <a href="/#about">About</a>
-        <a href="/#gallery">Gallery</a>
-        <a href="/#testimonials">Reviews</a>
+        <a href="/electrician-gloucester/">Electrician</a>
+        <a href="/handyman-gloucester/">Handyman</a>
         <a href="/blog/">Blog</a>
-        <a href="/#contact">Contact</a>
+        <a href="#quote">Get a Quote</a>
       </nav>
       <div class="footer__contact">
-        <a href="tel:07969359683" class="footer__phone">07969 359683</a>
-        <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20" target="_blank" rel="noopener noreferrer" class="footer__wa">WhatsApp</a>
+        <a href="tel:07969359683" class="footer__phone" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page:'bathrooms'});">07969 359683</a>
+        <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20" target="_blank" rel="noopener noreferrer" class="footer__wa" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page:'bathrooms'});">WhatsApp</a>
       </div>
     </div>
     <div class="footer__bottom">
@@ -115,6 +559,49 @@
     </div>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="sticky-cta" aria-label="Quick contact">
+    <a href="tel:07969359683" class="sticky-cta__call" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page:'bathrooms'});">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 5.9 5.9l.92-.93a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.45 16z"/></svg>
+      Call
+    </a>
+    <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20a%20bathroom%20renovation%20in%20Gloucester%20" class="sticky-cta__wa" target="_blank" rel="noopener" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page:'bathrooms'});">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+    <a href="#quote" class="sticky-cta__quote">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Get Quote
+    </a>
+  </div>
+
   <script src="/js/nav.js"></script>
+  <script>
+    document.querySelectorAll('.lp-faq__q').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.lp-faq__item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.lp-faq__item').forEach(function(i) { i.classList.remove('open'); });
+        if (!isOpen) item.classList.add('open');
+        this.setAttribute('aria-expanded', !isOpen);
+      });
+    });
+
+    document.getElementById('bathroomForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var form = this;
+      var data = new FormData(form);
+      fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(data).toString() })
+        .then(function() {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({event: 'form_submission', conversionType: 'bathroom_quote'});
+          form.style.display = 'none';
+          document.getElementById('bathroomSuccess').style.display = 'block';
+          setTimeout(function() { window.location.href = '/thank-you'; }, 2500);
+        })
+        .catch(function() { form.submit(); });
+    });
+  </script>
 </body>
 </html>
