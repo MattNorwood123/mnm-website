@@ -2,6 +2,18 @@
   command = "npm run build"
   publish = "_site"
 
+[[redirects]]
+  from = "/bathroom-renovations-gloucester/"
+  to = "/bathroom-renovation-gloucester/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bathroom-renovations-gloucester"
+  to = "/bathroom-renovation-gloucester/"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
