@@ -1,6 +1,6 @@
 ---
 title: "Why a Home Battery Can Save You Thousands Over Time"
-metaTitle: "Home Battery Savings: Worth It Long Term? | MNM"
+metaTitle: "Home Battery Savings: Worth It Long Term? | MJ Maintenance"
 date: 2026-07-27
 category: Guides
 description: Find out how a home battery stores your solar power, cuts evening bills and saves thousands over time, plus how to size one right for a Gloucester home.

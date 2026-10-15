@@ -66,7 +66,7 @@ The biggest cost drivers tend to be:
 - **Finish level.** Large-format tiles, natural stone and premium brassware cost more to buy and more to fit well.
 - **Structural changes.** Removing a wall or reconfiguring the space brings in extra trades and time.
 
-One genuine advantage of working with a smaller, local outfit is that you aren't paying for offices, call centres and layers of management baked into the price. With MNM you get the same standard of work without those overheads, which means more of your budget goes into the room itself rather than a company's running costs.
+One genuine advantage of working with a smaller, local outfit is that you aren't paying for offices, call centres and layers of management baked into the price. With MJ Maintenance you get the same standard of work without those overheads, which means more of your budget goes into the room itself rather than a company's running costs.
 
 ## Choosing between a refresh and a full renovation
 
@@ -125,4 +125,4 @@ Absolutely. Some of the biggest improvements come from smart layout choices, bet
 
 ## The next step
 
-A good bathroom renovation is really about solving the right problems in the right order, then finishing them with care. If you've got a room in Gloucester or across Gloucestershire that's cold, dated, or just not working the way you need it to, the sensible starting point is a conversation about what's actually wrong and what a realistic fix looks like. MNM is family-run and hands-on, so you'll be dealing directly with the person doing the work, not passed between a call centre and a subcontractor. Get in touch to talk through your bathroom and the options that suit your space and budget.
+A good bathroom renovation is really about solving the right problems in the right order, then finishing them with care. If you've got a room in Gloucester or across Gloucestershire that's cold, dated, or just not working the way you need it to, the sensible starting point is a conversation about what's actually wrong and what a realistic fix looks like. MJ Maintenance is family-run and hands-on, so you'll be dealing directly with the person doing the work, not passed between a call centre and a subcontractor. Get in touch to talk through your bathroom and the options that suit your space and budget.

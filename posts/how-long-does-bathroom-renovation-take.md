@@ -68,7 +68,7 @@ Here's where a lot of bathrooms go wrong, and it's got nothing to do with the ac
 
 On a typical renovation you've got a plumber, an electrician, a plasterer and a tiler. When those are booked separately, or through a big firm that strings together a chain of subcontractors who don't talk to each other, you get gaps. The plasterer turns up before the first-fix is done. The tiler's booked for a day the walls aren't ready. Everyone points at everyone else, and your one-week job drifts into a month.
 
-The way MNM works, one accountable person oversees the whole job from strip-out to the final seal. The plastering has to be dry before the tiler starts because the same person is scheduling both. That's quality workmanship without the middleman prices, and it's the single biggest thing that keeps a bathroom on track. If you want to see how a project gets mapped out before any tools come off the van, the [bathroom renovation planning guide for Gloucester homes](/blog/bathroom-renovation-gloucester-planning-guide/) walks through the decisions worth making early.
+The way MJ Maintenance works, one accountable person oversees the whole job from strip-out to the final seal. The plastering has to be dry before the tiler starts because the same person is scheduling both. That's quality workmanship without the middleman prices, and it's the single biggest thing that keeps a bathroom on track. If you want to see how a project gets mapped out before any tools come off the van, the [bathroom renovation planning guide for Gloucester homes](/blog/bathroom-renovation-gloucester-planning-guide/) walks through the decisions worth making early.
 
 ## Can you still use the bathroom while it's being done?
 
