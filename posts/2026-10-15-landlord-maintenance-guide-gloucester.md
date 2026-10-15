@@ -4,6 +4,7 @@ date: 2026-10-15
 category: Guides
 description: "A practical guide for Gloucester landlords: the compliance checks you can't skip, a seasonal maintenance rhythm, and why fixing small jobs early protects your returns."
 image: /images/blog/landlord-maintenance-gloucester.webp
+imageFit: contain
 ---
 
 It's a wet Tuesday in Gloucester and my phone goes at ten past seven. A landlord has a tenant stood in a kitchen with water coming through the ceiling, and nobody can remember the last time anyone looked at the roof.

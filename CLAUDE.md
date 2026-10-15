@@ -51,6 +51,8 @@ image: /images/gallery/project-3.jpg
 
 Pick whichever looks most relevant to the post topic.
 
+**Graphics with text:** post images are cropped to fit by default, which cuts off text on flyers or social graphics. For those, add `imageFit: contain` to the frontmatter (under `image:`) so the whole image shows.
+
 ### Body formatting
 - Use `##` for main section headings, `###` for sub-headings
 - Use bullet points and bold text to break up longer sections

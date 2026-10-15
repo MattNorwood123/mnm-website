@@ -93,7 +93,7 @@
         <h1 class="post__title">{{ title }}</h1>
         <div class="post__date">{{ date | dateDisplay }}</div>
         {% if image %}
-        <img src="{{ image }}" alt="{{ title }}" class="post__hero">
+        <img src="{{ image }}" alt="{{ title }}" class="post__hero{% if imageFit == "contain" %} post__hero--contain{% endif %}">
         {% endif %}
         <div class="post__body">
           {{ content | safe }}

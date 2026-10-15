@@ -96,7 +96,7 @@ permalink: /blog/
           <article class="blog-card" data-cat="{{ post.data.category | slug }}">
             {% if post.data.image %}
             <a href="{{ post.url }}" class="blog-card__img-wrap">
-              <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="blog-card__img" loading="lazy">
+              <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="blog-card__img{% if post.data.imageFit == "contain" %} blog-card__img--contain{% endif %}" loading="lazy">
             </a>
             {% endif %}
             <div class="blog-card__body">

@@ -74,6 +74,7 @@
   display: block;
   transition: transform 0.3s;
 }
+.blog-card__img--contain { object-fit: contain; background: #1c1c1c; }
 .blog-card:hover .blog-card__img { transform: scale(1.04); }
 .blog-card__body {
   padding: 1.5rem;
@@ -171,6 +172,16 @@
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 2.5rem;
+}
+/* Graphics with text (imageFit: contain in frontmatter) show in full, not cropped */
+.post__hero--contain {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .post__body {
   max-width: 720px;
