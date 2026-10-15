@@ -73,13 +73,13 @@ Netlify will pick up the push and rebuild the site. The post will be live at `ht
 
 ---
 
-## Important — do not change these
+## Important — keep these consistent
 
 - **Brand name:** MJ Maintenance (never "MNM", "Matt Norwood Maintenance" or anything else)
 - **Phone number:** 07969 359683
 - **WhatsApp:** 447969359683
-- **Do not edit** any of the landing pages (`electrician-gloucester.html`, `handyman-gloucester.html`, `bathroom-renovation-gloucester.html`) or the homepage (`index.html`) unless Matt specifically asks you to
-- **Do not change** the design, colours or layout of any page
+
+Matt is free to update any page on the site — landing pages, homepage, service descriptions, anything. Just keep the phone number, WhatsApp number and brand name consistent throughout.
 
 ---
 
