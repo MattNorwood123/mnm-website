@@ -3,7 +3,7 @@ title: "Landlord EICRs in Gloucester: What They Cover and How to Stay on Top of 
 date: 2026-10-15
 category: Guides
 description: "A plain-spoken guide for Gloucester landlords: what an EICR is, how to read the C1, C2, C3 and FI codes, and how to manage inspections across your rental properties."
-image: /images/gallery/project-4.jpg
+image: /images/blog/landlord-eicr-gloucester.webp
 ---
 
 It's a wet Tuesday morning in Gloucester and I'm in a rented terrace off Barton Street, torch in hand, looking at a fuse board that was probably last touched when flares were in fashion. The landlord called me because a tenant mentioned the lights flickering. One quick look told me the whole installation was overdue a proper check.
