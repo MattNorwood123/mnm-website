@@ -115,4 +115,4 @@ Always. We visit the property, give you an honest view of what needs doing now a
 
 ## One company to manage and maintain your rentals
 
-If you're a landlord or portfolio owner looking for a **property management company in Gloucester** that does its own maintenance, give MN Maintenance and Management a call on **07969 359683**, send a WhatsApp, or get in touch through the website. We'll come and look at your properties and talk you through how we can help.
+If you're a landlord or portfolio owner looking for a [property management company in Gloucester](https://mjmaintenance.co.uk/property-management-gloucester/) that does its own maintenance, give MN Maintenance and Management a call on **07969 359683**, send a WhatsApp, or get in touch through the website. We'll come and look at your properties and talk you through how we can help.
