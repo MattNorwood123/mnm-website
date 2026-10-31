@@ -135,4 +135,4 @@ No. I visit personally, quote transparently, and there are no hidden extras. The
 
 Good landlord maintenance isn't complicated. Keep your compliance certificates in date, deal with the small stuff before it grows, work with the seasons rather than against them, and use materials that suit the age of the property. Do that and your rentals cost less to run and let more easily.
 
-If you'd rather hand the whole lot to one local, insured, ex-military-trained team who'll turn up, be straight with you, and actually do the boring stuff before the pretty stuff, that's exactly what MJ Maintenance is here for. Call or WhatsApp **07969 359683**, or [get in touch through the website](/index.html#contact), for a no-pressure chat about your property or your portfolio.
+If you'd rather hand the whole lot to one local, insured, ex-military-trained team who'll turn up, be straight with you, and actually do the boring stuff before the pretty stuff, that's exactly what MN Maintenance and Management is here for. Call or WhatsApp **07969 359683**, or [get in touch through the website](/index.html#contact), for a no-pressure chat about your property or your portfolio.

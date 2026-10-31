@@ -93,7 +93,7 @@ Spend on what you touch and use hardest. That's the honest rule of thumb I give 
 
 A kitchen touches nearly every trade there is: building, plumbing, electrics, plastering, tiling, joinery. When you hire those separately, you become the project manager whether you wanted to or not. The electrician can't come until the plasterer's done, the plasterer's waiting on first fix, and everyone blames everyone else when the timings slip.
 
-This is where one accountable person makes a real difference. MJ Maintenance works hands-on on every job rather than subcontracting it out, so there's no finger-pointing and no waiting for three different diaries to line up. It's the same reason a lot of our customers come nervous — often first-time buyers apprehensive about renovating — and end up relaxed once they see it's one person carrying the whole thing.
+This is where one accountable person makes a real difference. MN Maintenance and Management works hands-on on every job rather than subcontracting it out, so there's no finger-pointing and no waiting for three different diaries to line up. It's the same reason a lot of our customers come nervous — often first-time buyers apprehensive about renovating — and end up relaxed once they see it's one person carrying the whole thing.
 
 ## Mistake 7: Falling for the upsell
 

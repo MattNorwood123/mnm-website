@@ -113,4 +113,4 @@ Flag it straight away. A flickering light or a tripping breaker can be a symptom
 
 An EICR isn't red tape for the sake of it. It's the honest, no-nonsense way to know your rental's wiring is safe and to prove you've done right by your tenants. Get them done properly, keep track of the renewal dates, act on the genuine C1 and C2 items, and ignore anyone trying to inflate the bill with scare tactics.
 
-If you'd like a straightforward EICR quote with no hidden extras, and someone who's actually on the tools to do the work, give MJ Maintenance a call or WhatsApp on **07969 359683**, or [get in touch through the website](/index.html#contact). I'll give you the honest answer on what your property needs and nothing it doesn't.
+If you'd like a straightforward EICR quote with no hidden extras, and someone who's actually on the tools to do the work, give MN Maintenance and Management a call or WhatsApp on **07969 359683**, or [get in touch through the website](/index.html#contact). I'll give you the honest answer on what your property needs and nothing it doesn't.

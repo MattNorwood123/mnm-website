@@ -1,4 +1,4 @@
-# MJ Maintenance Website — Claude Instructions
+# MN Maintenance and Management Website — Claude Instructions
 
 ## Your main job here
 
@@ -77,7 +77,9 @@ Netlify will pick up the push and rebuild the site. The post will be live at `ht
 
 ## Important — keep these consistent
 
-- **Brand name:** MJ Maintenance (never "MNM", "Matt Norwood Maintenance" or anything else)
+- **Brand name:** MN Maintenance and Management (never "MJ Maintenance", "MNM", "Matt Norwood Maintenance" or anything else)
+- **Legal company name:** MN Maintenance and Management Ltd (used in the footer copyright line)
+- **Services:** property maintenance across all trades, plus full property management for landlords (tenant finding, rent collection, inspections, tenancy paperwork)
 - **Phone number:** 07969 359683
 - **WhatsApp:** 447969359683
 
