@@ -3,7 +3,8 @@ title: "Property Management and Maintenance in Gloucester: One Company for Landl
 date: 2026-10-31
 category: Guides
 description: "Looking for a property management company in Gloucester that also does the repairs? Tenant finding, rent collection, inspections and every maintenance trade, from one team and one number."
-image: /images/gallery/project-4.jpg
+image: /images/blog/landlord-let-sign.jpg
+imageFit: contain
 ---
 
 Most landlords in Gloucester end up with two sets of people to deal with: a letting agent who manages the tenancy, and a list of tradespeople who fix the property. The agent reports the problem, you approve it, someone finds a contractor, and three weeks later the tenant is still waiting.
