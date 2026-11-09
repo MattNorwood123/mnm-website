@@ -3,7 +3,7 @@ title: "Flat-Pack Furniture Assembly in Gloucester: How to Get It Level, Solid a
 date: 2026-11-09
 category: Guides
 description: "Why flat-pack goes wrong even for handy people, how to build it so it lasts in Gloucester's older homes, and when it's worth handing the Allen key to someone else."
-image: /images/gallery/project-3.jpg
+image: /images/blog/flat-pack-assembly.jpg
 ---
 
 It's half seven on a Sunday in Gloucester, the kettle's on, and there you are kneeling on the living room floor surrounded by forty-six wooden dowels, an Allen key that's already bending, and an instruction sheet with a cartoon man who looks far too calm. Sound familiar?
