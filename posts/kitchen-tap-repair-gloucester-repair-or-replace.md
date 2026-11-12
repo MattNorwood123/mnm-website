@@ -1,9 +1,12 @@
 ---
 title: Dripping Kitchen Tap in Gloucester? When to Repair and When to Replace
-date: 2026-11-12T12:14:48.405Z
+metaTitle: "Dripping Kitchen Tap in Gloucester? When to Repair and When to Replace"
+date: 2026-11-12
+category: Guides
 description: "A Gloucester builder's honest guide to a dripping kitchen tap: how
   to tell when a cheap repair will do, when replacing is the smarter spend, and
   when to call a plumber."
+image: /images/gallery/project-2.jpg
 ---
 It's half six on a cold Gloucester morning, the kettle's on, and there it is again: that slow *tick… tick… tick* from the kitchen tap. One drip every few seconds, right onto the stainless steel, loud enough to notice and annoying enough to ignore for another month. Sound familiar? Let me save you some money and some stress, because a dripping tap is one of those jobs where people either overpay or leave it far too long.
 
