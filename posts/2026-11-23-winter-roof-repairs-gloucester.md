@@ -3,7 +3,7 @@ title: "Winter Roof Repairs in Gloucester: What Needs Fixing Now and What Can Wa
 date: 2026-11-23
 category: Guides
 description: "A straight-talking guide to winter roof repairs in Gloucester: the small faults that become big bills, what needs fixing straight away, and what can sensibly wait."
-image: /images/blog/roof-inspection.jpg
+image: /images/blog/winter-roof-leak.png
 ---
 
 The first proper storm of the winter always sounds worse at 2am. Rain hammering the slates, a bit of wind rattling something on the chimney, and you lying there wondering if that drip you ignored in October is about to become a stain on the ceiling. I've had those calls the morning after plenty of times across Gloucester and the villages. So let me save you some money and some stress, and walk you through what a roof repair actually involves, what needs sorting straight away, and what can sensibly wait.
