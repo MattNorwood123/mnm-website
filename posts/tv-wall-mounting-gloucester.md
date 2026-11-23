@@ -1,6 +1,7 @@
 ---
 title: "Mounting a TV in Gloucester: Getting It Level, Safe and Cable-Free"
 date: 2026-11-13
+category: Guides
 description: "How to mount a TV safely in Gloucester: read your wall type, pick
   the right bracket and fixings, hide the cables, and know when to call a
   handyman or electrician."

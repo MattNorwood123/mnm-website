@@ -1,6 +1,7 @@
 ---
 title: "Heat Pump Grants in Gloucester: Worth It for an Older Solid-Wall Home?"
 date: 2026-11-12T15:12:17.229Z
+category: Guides
 description: An honest look at whether a heat pump grant makes sense for an
   older solid-wall home in Gloucester, what to fix first, and how to tell if the
   numbers really stack up.

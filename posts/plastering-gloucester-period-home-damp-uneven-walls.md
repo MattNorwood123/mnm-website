@@ -2,6 +2,7 @@
 title: "Damp and Uneven Walls in a Gloucester Period Home: What Plastering Can
   and Can't Fix"
 date: 2026-11-21
+category: Guides
 description: Damp or uneven walls in a Gloucester period home? A local builder
   explains what plastering can and can't fix, and why solid walls often need
   lime, not cement.

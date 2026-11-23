@@ -1,6 +1,7 @@
 ---
 title: "Putting Up Shelves That Actually Hold: A Gloucester Handyman's Honest Guide"
 date: 2026-11-13T17:22:55.635Z
+category: Tips & Tricks
 description: A straight-talking Gloucester handyman's guide to putting up
   shelves that stay level and hold their weight, covering wall types, the right
   fixings, and the mistakes that end in cracked plaster.

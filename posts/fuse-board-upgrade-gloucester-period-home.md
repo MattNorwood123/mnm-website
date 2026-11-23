@@ -1,6 +1,7 @@
 ---
 title: Old Fuse Board in Your Gloucester Period Home? Signs It's Time for an Upgrade
 date: 2026-11-18
+category: Guides
 description: Old fuse board in your Gloucester home? Spot the signs it needs
   upgrading, from fuse wire to no RCD, and learn when an EICR and a safe
   consumer unit swap make sense.

@@ -44,7 +44,7 @@ module.exports = function (eleventyConfig) {
 
   // Slug filter
   eleventyConfig.addFilter("slug", function (str) {
-    return str
+    return String(str || "")
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/(^-|-$)/g, "");
