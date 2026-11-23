@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full house renovations in Gloucester, project managed from start to finish. Roofing, plumbing, electrics, plastering, kitchens and bathrooms by one in-house team. Free quote.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="canonical" href="https://mjmaintenance.co.uk/house-renovation-gloucester/">
+  <meta property="og:title" content="House Renovation &amp; Project Management Gloucester | MN Maintenance and Management">
+  <meta property="og:description" content="Full house renovations in Gloucester, project managed from start to finish. Roofing, plumbing, electrics, plastering, kitchens and bathrooms by one in-house team. Free quote.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mjmaintenance.co.uk/house-renovation-gloucester/">
+  <meta property="og:image" content="https://mjmaintenance.co.uk/images/blog/house-renovation-gloucester.png">
+  <title>House Renovation &amp; Project Management Gloucester | MN Maintenance and Management</title>
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/services.css">
+  <link rel="stylesheet" href="/css/landing.css">
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NVFCS4QF');</script>
+
+  <style>
+    .bath-hero {
+      position: relative;
+      background: var(--bg-primary);
+      padding: 5rem 1.5rem 4rem;
+      overflow: hidden;
+    }
+    .bath-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(232,147,10,0.1) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .bath-hero__inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .bath-hero__back { display: inline-block; font-size: 0.85rem; color: var(--accent); margin-bottom: 1.25rem; }
+    .bath-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.25rem; }
+    .bath-hero h1 span { color: var(--accent); }
+    .bath-hero__sub { font-size: 1.05rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 2rem; }
+    .bath-hero__btns { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .bath-hero__image { border-radius: 8px; overflow: hidden; }
+    .bath-hero__image img { width: 100%; height: 420px; object-fit: cover; object-position: center; display: block; }
+
+    /* Trust strip */
+    .bath-trust { background: var(--bg-secondary); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; }
+    .bath-trust__inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+    .bath-trust__item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; font-weight: 600; }
+    .bath-trust__item svg { color: var(--accent); flex-shrink: 0; }
+
+    /* Services grid */
+    .bath-services { padding: var(--section-padding); background: var(--bg-primary); }
+    .bath-services__header { text-align: center; max-width: 600px; margin: 0 auto 2.5rem; }
+    .bath-services__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: var(--max-width); margin: 0 auto; }
+    .bath-card {
+      background: var(--bg-card);
+      border-radius: 8px;
+      padding: 1.5rem 1.25rem;
+      border-top: 3px solid transparent;
+      transition: border-color 0.2s, transform 0.2s;
+      text-align: center;
+    }
+    .bath-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+    .bath-card__icon { color: var(--accent); margin: 0 auto 0.75rem; }
+    .bath-card__title { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .bath-card__desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* Feature sections */
+    .bath-feature { padding: var(--section-padding); }
+    .bath-feature--light { background: var(--bg-secondary); }
+    .bath-feature--dark { background: var(--bg-primary); }
+    .bath-feature__inner { max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .bath-feature--reverse .bath-feature__inner { direction: rtl; }
+    .bath-feature--reverse .bath-feature__text,
+    .bath-feature--reverse .bath-feature__image { direction: ltr; }
+    .bath-feature__image { border-radius: 8px; overflow: hidden; }
+    .bath-feature__image img { width: 100%; height: 360px; object-fit: cover; display: block; }
+    .bath-feature__label { display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
+    .bath-feature__text h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
+    .bath-feature__text p { color: var(--text-muted); line-height: 1.75; margin-bottom: 1rem; }
+    .bath-feature__list { list-style: none; margin: 0.75rem 0 1.25rem; }
+    .bath-feature__list li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0.45rem; }
+    .bath-feature__list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; margin-top: 0.45rem; }
+
+    /* Project gallery (2-up image cards) */
+    .bath-gallery { padding: var(--section-padding); background: var(--bg-secondary); }
+    .bath-gallery__header { text-align: center; max-width: 560px; margin: 0 auto 2.5rem; }
+    .bath-gallery__grid { max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .bath-gallery__card { border-radius: 8px; overflow: hidden; background: var(--bg-card); }
+    .bath-gallery__card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .bath-gallery__info { padding: 1rem 1.25rem; }
+    .bath-gallery__title { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .bath-gallery__desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* Reviews */
+    .bath-reviews { padding: var(--section-padding); background: var(--bg-primary); }
+    .bath-reviews__header { text-align: center; margin-bottom: 2rem; }
+    .bath-reviews__grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .bath-review-card { background: var(--bg-card); border-radius: 8px; padding: 1.75rem; border-left: 3px solid var(--accent); }
+    .bath-review-card__stars { color: var(--accent); font-size: 1rem; margin-bottom: 0.75rem; }
+    .bath-review-card__text { font-style: italic; color: var(--text); font-size: 0.92rem; line-height: 1.7; margin-bottom: 0.75rem; }
+    .bath-review-card__author { font-size: 0.82rem; color: var(--text-muted); }
+
+    @media (max-width: 1024px) { .bath-services__grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 900px) {
+      .bath-hero__inner { grid-template-columns: 1fr; }
+      .bath-hero__image { display: none; }
+      .bath-feature__inner { grid-template-columns: 1fr; gap: 2rem; }
+      .bath-feature--reverse .bath-feature__inner { direction: ltr; }
+      .bath-gallery__grid { grid-template-columns: 1fr 1fr; }
+      .bath-reviews__grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .bath-services__grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+      .bath-gallery__grid { grid-template-columns: 1fr; }
+      .bath-trust__inner { gap: 1rem; }
+    }
+  </style>
+  <script src="/js/attribution.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "MN Maintenance and Management",
+        "url": "https://mjmaintenance.co.uk",
+        "telephone": "+447969359683",
+        "areaServed": { "@type": "AdministrativeArea", "name": "Gloucestershire" },
+        "sameAs": ["https://www.google.com/maps?cid=3826766968397048980"]
+      },
+      {
+        "@type": "Service",
+        "name": "House Renovation and Project Management",
+        "provider": { "@type": "LocalBusiness", "name": "MN Maintenance and Management" },
+        "areaServed": { "@type": "City", "name": "Gloucester" },
+        "description": "Full and part house renovations in Gloucester, project managed by one in-house team: roofing, plumbing, electrics, plastering, kitchens, bathrooms and finishing.",
+        "url": "https://mjmaintenance.co.uk/house-renovation-gloucester/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVFCS4QF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header id="nav">
+    <nav class="nav">
+      <div class="container nav__inner">
+        <a href="/" class="nav__logo">
+          <img src="/images/logo.png" alt="MN Maintenance and Management — Gloucester Builder" class="nav__logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+          <span class="nav__logo-text" style="display:none">MN Maintenance and Management</span>
+        </a>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="/#services" class="nav__link">Services</a></li>
+          <li><a href="/#about" class="nav__link">About</a></li>
+          <li><a href="/#gallery" class="nav__link">Gallery</a></li>
+          <li><a href="/#testimonials" class="nav__link">Reviews</a></li>
+          <li><a href="/gas-central-heating-gloucester/" class="nav__link">Gas &amp; Heating</a></li>
+          <li><a href="/blog/" class="nav__link">Blog</a></li>
+          <li><a href="#quote" class="nav__link nav__link--cta">Get a Quote</a></li>
+        </ul>
+        <a href="https://share.google/tIK0TuZtennRZLgTd" target="_blank" rel="noopener noreferrer" class="nav__google-rating" aria-label="5 star Google reviews">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          <span class="nav__google-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </a>
+        <a href="tel:07969359683" class="header-phone" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page_path:window.location.pathname});">07969 359683</a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="bath-hero">
+      <div class="bath-hero__inner">
+        <div>
+          <a href="/" class="bath-hero__back">← Back to Home</a>
+          <h1>House Renovations<br>in <span>Gloucester</span></h1>
+          <p class="bath-hero__sub">Full and part house renovations across Gloucester and Gloucestershire, project managed from first visit to final clean. Roofing, plumbing, electrics, plastering, kitchens and bathrooms all done by our own team, in the right order, with one person to call.</p>
+          <div class="bath-hero__btns">
+            <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+            <a href="tel:07969359683" class="btn btn-outline" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page_path:window.location.pathname});">Call 07969 359683</a>
+            <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20a%20house%20renovation%20in%20Gloucester%20" class="btn btn-outline" target="_blank" rel="noopener" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page_path:window.location.pathname});">WhatsApp Us</a>
+          </div>
+        </div>
+        <div class="bath-hero__image">
+          <img src="/images/blog/house-renovation-gloucester.png" alt="House renovation in progress in Gloucester">
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <div class="bath-trust">
+      <div class="bath-trust__inner">
+        <div class="bath-trust__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          One Point of Contact
+        </div>
+        <div class="bath-trust__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          All Trades In-House
+        </div>
+        <div class="bath-trust__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Fully Insured
+        </div>
+        <div class="bath-trust__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Gloucester-based
+        </div>
+        <div class="bath-trust__item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Free Quotes
+        </div>
+      </div>
+    </div>
+
+    <!-- Services grid -->
+    <section class="bath-services" id="services">
+      <div class="bath-services__header">
+        <span class="section-label">Every trade, one team</span>
+        <h2 class="section-heading">Everything Your Renovation Needs</h2>
+        <p style="color:var(--text-muted);line-height:1.7;">Hand us the whole house or just the parts you need. Either way, you're not chasing separate builders, plumbers, electricians and plasterers.</p>
+      </div>
+      <div class="bath-services__grid">
+
+        <div class="bath-card">
+          <div class="bath-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="bath-card__title">Project Management</div>
+          <p class="bath-card__desc">One point of contact, one plan, one timeline</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="bath-card__title">Roofing</div>
+          <p class="bath-card__desc">Repairs, weatherproofing and replacements</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="bath-card__title">Plumbing</div>
+          <p class="bath-card__desc">First and second fix, new and moved pipework</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="bath-card__title">Electrics</div>
+          <p class="bath-card__desc">Rewires, fuse boards, testing and inspection</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="bath-card__title">Plastering</div>
+          <p class="bath-card__desc">Including lime plaster for period homes</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="bath-card__title">Kitchens</div>
+          <p class="bath-card__desc">Full kitchen renovation and fitting</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="bath-card__title">Bathrooms</div>
+          <p class="bath-card__desc">Full bathroom renovation, tiling and wet rooms</p>
+        </div>
+
+        <div class="bath-card">
+          <div class="bath-card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="bath-card__title">Finishing</div>
+          <p class="bath-card__desc">Flooring, decorating, snagging and final clean</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Feature: project management -->
+    <section class="bath-feature bath-feature--light" id="project-management">
+      <div class="bath-feature__inner">
+        <div class="bath-feature__image">
+          <img src="/images/gallery/project-2.jpg" alt="Renovation work by MN Maintenance and Management in Gloucester">
+        </div>
+        <div class="bath-feature__text">
+          <span class="bath-feature__label">Renovation project management</span>
+          <h2>You Shouldn't Have to Project Manage Your Own Renovation</h2>
+          <p>Hire a plumber, an electrician, a plasterer and a roofer separately and you become the project manager by default: chasing diaries, sorting out the gaps between trades, and paying when one job has to be undone for the next.</p>
+          <p>We run the whole job. Matt visits every site personally, gives you one clear quote with no hidden extras, and our own in-house team does the work. No subcontractors and no stranger turning up in a van.</p>
+          <ul class="bath-feature__list">
+            <li>One point of contact from quote to completion</li>
+            <li>All trades in-house, so the sequence is right every time</li>
+            <li>A transparent quote with no hidden extras</li>
+            <li>Ex-military trained team: on time, tidy, finished properly</li>
+          </ul>
+          <div style="margin-top:1.25rem;">
+            <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature: order of works -->
+    <section class="bath-feature bath-feature--dark bath-feature--reverse" id="order-of-works">
+      <div class="bath-feature__inner">
+        <div class="bath-feature__image">
+          <img src="/images/gallery/project-4.jpg" alt="Renovation project in Gloucester by MN Maintenance and Management">
+        </div>
+        <div class="bath-feature__text">
+          <span class="bath-feature__label">Done in the right order</span>
+          <h2>The Boring Stuff Before the Pretty Stuff</h2>
+          <p>A renovation that jumps around costs more and takes longer. We agree the order of works before anyone lifts a tool, and we sort the hidden problems while the walls are open, not after your new finish is sitting on top of them.</p>
+          <ul class="bath-feature__list">
+            <li><strong>Structure and weatherproofing:</strong> roof, walls, windows</li>
+            <li><strong>First fix:</strong> plumbing and electrics through the house</li>
+            <li><strong>Plastering and flooring:</strong> surfaces made ready</li>
+            <li><strong>Second fix:</strong> kitchens, bathrooms, sockets, radiators</li>
+            <li><strong>Finishes:</strong> tiling, decorating and the final clean</li>
+          </ul>
+          <p>Read the full guide: <a href="/blog/house-renovation-gloucester-where-to-start/" style="color:var(--accent);">Planning a house renovation in Gloucester: where to start</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature: period homes and landlords -->
+    <section class="bath-feature bath-feature--light" id="period-homes">
+      <div class="bath-feature__inner">
+        <div class="bath-feature__image">
+          <img src="/images/gallery/project-1.jpg" alt="Property renovation in Gloucester by MN Maintenance and Management">
+        </div>
+        <div class="bath-feature__text">
+          <span class="bath-feature__label">Period homes &amp; rentals</span>
+          <h2>Older Homes, Doer-Uppers and Rental Refurbishments</h2>
+          <p>Gloucester is full of older terraces and solid-wall period homes. They need breathable materials like lime plaster and lime mortar. Seal them up with the wrong modern products and you trap moisture and cause damp months later. We use the right materials for the age of your house.</p>
+          <ul class="bath-feature__list">
+            <li>Period and solid-wall home renovations</li>
+            <li>Doer-uppers and inherited properties</li>
+            <li>Landlord refurbishments between tenancies</li>
+            <li>Electrical testing and inspection before you start</li>
+          </ul>
+          <p>Landlords: we can also <a href="/property-management-gloucester/" style="color:var(--accent);">manage the property</a> once the work's done.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="bath-reviews">
+      <div class="bath-reviews__header">
+        <span class="section-label">What customers say</span>
+        <h2 class="section-heading">What Gloucester Customers Say</h2>
+      </div>
+      <div class="bath-reviews__grid">
+        <div class="bath-review-card">
+          <div class="bath-review-card__stars">★★★★★</div>
+          <p class="bath-review-card__text">"He has transformed what was a cold damp and grotty bathroom I was ashamed of into being my favourite room in my house. Thank you Matt, you're a star."</p>
+          <span class="bath-review-card__author">— Meg Seg, Google Review · Gloucester</span>
+        </div>
+        <div class="bath-review-card">
+          <div class="bath-review-card__stars">★★★★★</div>
+          <p class="bath-review-card__text">"You explain an idea, he looks at the room for five minutes and comes back with a solution ten times better than what you imagined. Absolute genius at what he does."</p>
+          <span class="bath-review-card__author">— The Colour Room Gloucester, Google Review</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote form -->
+    <section class="lp-quote" id="quote">
+      <div class="lp-quote__inner">
+        <span class="section-label">Free quote</span>
+        <h2>Get a Free Renovation Quote</h2>
+        <p>Tell us about your project and Matt will come and look at it himself, then give you a clear, honest price. No obligation.</p>
+        <div class="lp-form">
+          <form name="renovation-quote" method="POST" action="/thank-you" netlify netlify-honeypot="bot-field" id="renovationForm">
+            <input type="hidden" name="form-name" value="renovation-quote">
+            <input type="hidden" name="source-page" value="House Renovation Gloucester">
+            <input type="hidden" name="landing_page" id="hr-landing-page">
+            <input type="hidden" name="form_page" value="/house-renovation-gloucester/">
+            <input type="hidden" name="gclid" id="hr-gclid">
+            <input type="hidden" name="gbraid" id="hr-gbraid">
+            <input type="hidden" name="wbraid" id="hr-wbraid">
+            <input type="hidden" name="utm_source" id="hr-utm-source">
+            <input type="hidden" name="utm_medium" id="hr-utm-medium">
+            <input type="hidden" name="utm_campaign" id="hr-utm-campaign">
+            <input type="hidden" name="utm_term" id="hr-utm-term">
+            <input type="hidden" name="utm_content" id="hr-utm-content">
+            <input type="text" name="bot-field" style="display:none" tabindex="-1" aria-hidden="true">
+            <div class="lp-form__row">
+              <div class="lp-form__group">
+                <label for="hr-name">Your Name *</label>
+                <input type="text" id="hr-name" name="name" placeholder="Jane Smith" required>
+              </div>
+              <div class="lp-form__group">
+                <label for="hr-phone">Phone Number *</label>
+                <input type="tel" id="hr-phone" name="phone" placeholder="07xxx xxxxxx" required>
+              </div>
+            </div>
+            <div class="lp-form__group">
+              <label for="hr-postcode">Postcode *</label>
+              <input type="text" id="hr-postcode" name="postcode" placeholder="GL1 2AB" required style="max-width:200px;">
+            </div>
+            <div class="lp-form__group">
+              <label for="hr-job">Tell us about your renovation *</label>
+              <textarea id="hr-job" name="job" placeholder="e.g. Three-bed Victorian terrace. Needs a rewire, new kitchen and bathroom, replastering and some roof repairs." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary lp-form__submit" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'quote_button_click',page_path:window.location.pathname});">Get My Free Quote</button>
+          </form>
+          <div class="lp-form__success" id="renovationSuccess">
+            <h3>Thanks — we've got your request!</h3>
+            <p>Matt will be in touch shortly. For anything urgent, call or WhatsApp on <a href="tel:07969359683" style="color:var(--accent);">07969 359683</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="lp-faq">
+      <div class="lp-faq__header">
+        <span class="section-label">Common questions</span>
+        <h2>House Renovation FAQs</h2>
+      </div>
+      <div class="lp-faq__grid">
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Can you project manage my whole renovation?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes. We plan the order of works, run every trade with our own in-house team and keep you updated throughout. You deal with one person from the first visit to the final clean.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Can you do just part of the renovation?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes. Hand over the whole house or just the parts you need, such as the rewire and plastering, or the kitchen and bathroom. We'll fit around what you've already got sorted.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            How much does a house renovation cost in Gloucester?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">There's no honest single figure, because it depends on the condition of the property, the size of the job and the finishes you choose. That's why Matt comes and looks in person rather than guessing over the phone, so the quote reflects your actual house.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Do you use subcontractors?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">No. The work is done by our own in-house team, not external firms. Any gas work is carried out by a Gas Safe registered engineer.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Do older homes need different treatment?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes. Solid-wall period homes need breathable materials like lime plaster and lime mortar. The wrong modern products can trap moisture and cause damp. It's one of the things most often missed on renovations.</div>
+        </div>
+        <div class="lp-faq__item">
+          <button class="lp-faq__q" aria-expanded="false">
+            Can you check the wiring before we start?
+            <svg class="lp-faq__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="lp-faq__a">Yes. We're City &amp; Guilds 2391 qualified for electrical testing and inspection. Older properties often need the wiring checked before a big renovation, and it's far cheaper to sort while the walls are open. See our <a href="/electrician-gloucester/" style="color:var(--accent);">Gloucester electrician page</a>.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas -->
+    <div class="lp-areas">
+      <h3>Areas We Cover</h3>
+      <div class="lp-areas__list">
+        <span>Gloucester</span>
+        <span>Quedgeley</span>
+        <span>Churchdown</span>
+        <span>Brockworth</span>
+        <span>Longlevens</span>
+        <span>Hucclecote</span>
+        <span>Tuffley</span>
+        <span>Barnwood</span>
+        <span>Abbeymead</span>
+        <span>Cheltenham</span>
+        <span>Stroud</span>
+        <span>Tewkesbury</span>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <section style="background:var(--bg-primary);padding:3.5rem 1.5rem;text-align:center;">
+      <span class="section-label">Get in touch</span>
+      <h2 class="section-heading" style="margin-bottom:0.75rem;">Planning a Renovation?</h2>
+      <p style="color:var(--text-muted);margin-bottom:2rem;">Free quotes across Gloucester and Gloucestershire. Call, WhatsApp or fill in the form above.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+        <a href="tel:07969359683" class="btn btn-outline" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page_path:window.location.pathname});">Call 07969 359683</a>
+        <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20a%20house%20renovation%20in%20Gloucester%20" class="btn btn-outline" target="_blank" rel="noopener" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page_path:window.location.pathname});">WhatsApp Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="/images/logo.png" alt="MN Maintenance and Management — Gloucester Builder" class="footer__logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="footer__logo" style="display:none">MN Maintenance and Management</span>
+        <p class="footer__tagline">MN Maintenance and Management<br>Serving Gloucester &amp; Gloucestershire</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="/#services">Services</a>
+        <a href="/#about">About</a>
+        <a href="/electrician-gloucester/">Electrician</a>
+        <a href="/handyman-gloucester/">Handyman</a>
+        <a href="/blog/">Blog</a>
+        <a href="#quote">Get a Quote</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="tel:07969359683" class="footer__phone" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page_path:window.location.pathname});">07969 359683</a>
+        <a href="https://wa.me/447969359683?text=Hi%20Matt%2C%20I%20found%20you%20on%20your%20website%20and%20I%27d%20like%20a%20free%20quote%20for%20" target="_blank" rel="noopener noreferrer" class="footer__wa" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page_path:window.location.pathname});">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> MN Maintenance and Management Ltd. All rights reserved.</p>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="sticky-cta" aria-label="Quick contact">
+    <a href="tel:07969359683" class="sticky-cta__call" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'phone_click',page_path:window.location.pathname});">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 5.9 5.9l.92-.93a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.45 16z"/></svg>
+      Call
+    </a>
+    <a href="https://wa.me/447969359683?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20a%20house%20renovation%20in%20Gloucester%20" class="sticky-cta__wa" target="_blank" rel="noopener" onclick="window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'whatsapp_click',page_path:window.location.pathname});">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+    <a href="#quote" class="sticky-cta__quote">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Get Quote
+    </a>
+  </div>
+
+  <script src="/js/nav.js"></script>
+  <script>
+    document.querySelectorAll('.lp-faq__q').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.lp-faq__item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.lp-faq__item').forEach(function(i) { i.classList.remove('open'); });
+        if (!isOpen) item.classList.add('open');
+        this.setAttribute('aria-expanded', !isOpen);
+      });
+    });
+
+
+    document.getElementById('renovationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var form = this;
+      var data = new FormData(form);
+      fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(data).toString() })
+        .then(function() {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({event: 'form_submission', service: 'renovation', form_name: 'renovation_quote', page_path: '/house-renovation-gloucester/'});
+          form.style.display = 'none';
+          document.getElementById('renovationSuccess').style.display = 'block';
+          setTimeout(function() { window.location.href = '/thank-you'; }, 2500);
+        })
+        .catch(function() { form.submit(); });
+    });
+  </script>
+</body>
+</html>

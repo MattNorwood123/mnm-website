@@ -56,7 +56,7 @@ Plenty of companies send a subcontractor or a stranger you've never spoken to, t
 
 Our team is ex-military trained, so the discipline and reliability are built in. For the electrical side, we're City & Guilds 2391 qualified for testing and inspection, which matters when you're touching wiring in an older home.
 
-**Thinking about a project?** Call me on **07969 359683** for a free, no-obligation quote, or WhatsApp directly. I'll come and look at it myself, honestly tell you what needs doing, and what can wait.
+**Thinking about a project?** Call me on **07969 359683** for a free, no-obligation quote, or WhatsApp directly. I'll come and look at it myself, honestly tell you what needs doing, and what can wait. You can see how we run a full job on our [house renovation and project management](/house-renovation-gloucester/) page.
 
 ## Planning kitchens and bathrooms within the bigger job
 
