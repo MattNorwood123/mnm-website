@@ -22,3 +22,15 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
+
+[[redirects]]
+  from = "/blog/free-heat-pump-gloucester-qualify-2026/*"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/heat-pump-grant-gloucester-older-solid-wall-home/*"
+  to = "/blog/"
+  status = 301
+  force = true
