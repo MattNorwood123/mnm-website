@@ -1,6 +1,8 @@
 ---
 title: Do You Need Planning Permission for a House Extension in Gloucester?
 date: 2026-11-24
+category: Guides
+image: /images/blog/house-extension-gloucester.png
 description: Does your Gloucester house extension need planning permission or
   does it fall under permitted development? A local builder explains the rules
   and what to check first.
