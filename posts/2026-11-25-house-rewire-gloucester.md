@@ -4,7 +4,7 @@ metaTitle: "House Rewire Gloucester: Signs You Need One and What's Involved"
 date: 2026-11-25
 category: Guides
 description: "Tripping switches or old wiring in your Gloucester home? How to spot the signs you may need a rewire, what the job involves, and when an EICR should come first."
-image: /images/blog/landlord-eicr-gloucester.webp
+image: /images/blog/house-rewire-gloucester.png
 ---
 
 It was a dark February evening on a Gloucester terrace when the kettle, the telly and the upstairs lights all cut out at once. The owner had been nursing that fuse box for years, flicking the trip switch back up like it was a normal part of boiling water. It isn't. So before you spend money on something you may not need, or ignore something you shouldn't, let me save you some stress and walk you through what a rewire actually involves.
